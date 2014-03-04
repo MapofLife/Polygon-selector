@@ -1,0 +1,29 @@
+application: map-of-life
+version: poly
+runtime: python27
+threadsafe: true
+api_version: 1
+
+inbound_services:
+- warmup
+
+builtins:
+- remote_api: on
+
+handlers:
+
+- url: /stylesheets
+  static_dir: stylesheets
+
+- url: /js
+  static_dir: js
+
+- url: /.*
+  static_dir: html
+
+- url: /save/.*
+  script: insert_stuff.application
+
+- url: /
+  static_files: html/index.html
+  upload: html/index.html

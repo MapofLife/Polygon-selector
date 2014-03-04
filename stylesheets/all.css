@@ -1,0 +1,4246 @@
+/* line 17, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 20, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1; }
+
+/* line 22, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 24, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 26, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 28, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none; }
+  /* line 101, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+/* line 30, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* line 114, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block; }
+
+/*** CENTRAL SPRITES ***/
+/* line 45, ../../../../app/assets/stylesheets/front/common/sprites.css.scss */
+.central_icons-sprite, a.double_arrow, h3.double_arrow, section a.back, section a.back:hover, section a.previous, section a.previous:hover, section a.next, section a.next:hover, ul.features li, section.sessions form a.checkbox, section.sessions form a.checkbox:hover, section.sessions form a.checkbox.error, section.sessions form a.checkbox.checked, section.sessions form a.checkbox.checked:hover, section.sessions form div.field_error, body.developers.index ul.features li {
+  background: url('/images/central_icons-s3cc1ff9ad8.png') no-repeat; }
+
+/* line 95, ../../../../app/assets/stylesheets/front/common/sprites.css.scss */
+.logos-sprite, h1 a, header.white h1 a, header.white h1 a:hover, header.light h1 a, header.light h1 a:hover, footer span.cartodb, footer.short a.cartodb {
+  background: url('/images/logos-sd17a66774a.png') no-repeat; }
+
+/*
+ * DOM ELEMENTS
+ */
+/* line 15, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+a {
+  color: #397dba;
+  text-decoration: underline; }
+  /* line 20, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  a:hover, a:focus {
+    outline: 0 none;
+    border: 0;
+    color: #2b6191;
+    cursor: pointer;
+    text-decoration: underline; }
+  /* line 28, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  a.disabled {
+    cursor: default;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5; }
+    /* line 32, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+    a.disabled:hover {
+      text-decoration: none;
+      color: #397dba; }
+  /* line 38, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  a.light {
+    color: #A1BDDE; }
+  /* line 40, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  a.grey {
+    font-style: italic;
+    color: #666;
+    text-decoration: none; }
+    /* line 45, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+    a.grey:hover {
+      color: #333; }
+  /* line 48, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  a.double_arrow {
+    padding: 0 20px 0 0;
+    background-position: 100% -3453px;
+    white-space: nowrap; }
+  /* line 54, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  a.small {
+    font-size: 13px; }
+  /* line 56, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  a.vizzuality {
+    color: #999;
+    text-decoration: none; }
+    /* line 60, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+    a.vizzuality:hover {
+      color: #96C93C; }
+
+/* line 64, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+i {
+  font-style: italic; }
+
+/* line 67, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+h1 {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  width: 121px; }
+  /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+  h1 {
+    *display: inline; }
+  /* line 71, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h1 a {
+    display: block;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    text-transform: uppercase;
+    width: 130px;
+    height: 54px;
+    background-position: 0 -5948px; }
+  /* line 79, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h1.sessions {
+    display: block;
+    width: auto;
+    font: bold 31px "Segoe UI Bold", "Helvetica Bold", "Helvetica", Arial;
+    color: #333;
+    letter-spacing: -1px;
+    line-height: 32px;
+    line-height: normal\9;
+    word-spacing: -1px; }
+  /* line 90, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h1.compact {
+    line-height: 31px;
+    line-height: normal\9; }
+
+/* line 97, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+h2 {
+  font: bold 34px "Segoe UI Bold", "Helvetica Bold", "Helvetica", Arial;
+  color: white;
+  letter-spacing: -1px;
+  text-shadow: 0 -1px black;
+  line-height: 42px; }
+  /* line 104, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h2.compact {
+    line-height: 34px; }
+  /* line 105, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h2.blue_shadow {
+    text-shadow: 0 1px #245080; }
+  /* line 106, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h2.revert {
+    text-shadow: 0 1px black; }
+  /* line 107, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h2.big {
+    font-size: 45px;
+    line-height: normal\9; }
+  /* line 111, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h2.bigger {
+    font-size: 51px;
+    line-height: normal\9;
+    line-height: 60px; }
+  /* line 116, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h2.dark {
+    color: #333;
+    text-shadow: none; }
+  /* line 120, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h2.ngo {
+    font-size: 36px;
+    text-shadow: none; }
+
+/* line 126, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+h3 {
+  font: bold 23px "Segoe UI Bold", "Helvetica Bold", "Helvetica", Arial;
+  color: #333333;
+  letter-spacing: -1px;
+  line-height: 24px;
+  line-height: normal\9; }
+  /* line 133, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h3.light {
+    color: #666666; }
+  /* line 134, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h3.lighter {
+    color: #999999; }
+  /* line 135, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h3.big {
+    font-size: 25px; }
+  /* line 137, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h3.double_arrow {
+    padding: 0 20px 0 0;
+    background-position: 100% -3453px;
+    white-space: nowrap;
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    h3.double_arrow {
+      *display: inline; }
+
+/* line 145, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+h4 {
+  font: bold 39px "Segoe UI Bold", "Helvetica Bold", "Helvetica", Arial;
+  color: #333333;
+  letter-spacing: -3px;
+  line-height: 30px; }
+  /* line 145, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h4 small {
+    font-size: 27px;
+    line-height: normal; }
+
+/* line 146, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+h5 {
+  font: bold 19px "Segoe UI Bold", "Helvetica Bold", "Helvetica", Arial;
+  color: #333333;
+  letter-spacing: -1px;
+  line-height: 15px; }
+
+/* line 148, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+p {
+  font: normal 15px "Helvetica Neue", "Helvetica", Arial;
+  color: #333333;
+  line-height: normal; }
+  /* line 150, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  p.light {
+    color: #666666; }
+    /* line 150, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+    p.light a {
+      text-decoration: none; }
+  /* line 151, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  p.lighter {
+    color: #999999; }
+    /* line 151, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+    p.lighter a {
+      text-decoration: none; }
+  /* line 152, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  p.small {
+    font-size: 13px; }
+  /* line 153, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  p.big {
+    font-size: 17px; }
+  /* line 154, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  p.blue {
+    color: #203D5C; }
+  /* line 155, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  p.error {
+    color: #E95850; }
+    /* line 155, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+    p.error a {
+      color: #E95850;
+      text-decoration: underline; }
+      /* line 155, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+      p.error a:hover {
+        color: #A13D37; }
+  /* line 156, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  p.italic {
+    font-style: italic; }
+
+/* line 159, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+nav a {
+  margin: 0 0 0 23px;
+  font: normal 13px "Helvetica Neue", "Helvetica", Arial;
+  text-decoration: none; }
+
+/* line 165, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+dt {
+  font: bold 12px "Segoe UI Bold", "Helvetica Bold", "Helvetica", Arial;
+  color: #333; }
+
+/* line 170, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+img.floating {
+  position: absolute;
+  bottom: 0; }
+  /* line 174, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  img.floating.right {
+    right: 0; }
+
+/* line 177, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+b {
+  font-weight: bold; }
+
+/*
+ * CLASSES
+ */
+/* line 184, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.right {
+  float: right; }
+
+/* line 185, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.left {
+  float: left; }
+
+/* line 187, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin50 {
+  margin-top: 50px; }
+
+/* line 188, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin40 {
+  margin-top: 40px; }
+
+/* line 189, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin35 {
+  margin-top: 35px; }
+
+/* line 190, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin30 {
+  margin-top: 30px; }
+
+/* line 191, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin25 {
+  margin-top: 25px; }
+
+/* line 192, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin20 {
+  margin-top: 20px; }
+
+/* line 193, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin15 {
+  margin-top: 15px; }
+
+/* line 194, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin10 {
+  margin-top: 10px !important; }
+
+/* line 195, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin5 {
+  margin-top: 5px; }
+
+/* line 197, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
+
+/* line 203, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.hide {
+  display: none; }
+
+/* line 205, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.wrap {
+  position: relative;
+  width: 880px;
+  margin: 0 auto; }
+
+/* line 211, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.overflow {
+  overflow: visible; }
+
+/* line 213, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.center {
+  width: 100%;
+  text-align: center; }
+
+/* line 218, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+span.separator {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  background: #E9E9E9\9; }
+  /* line 227, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  span.separator.dark {
+    background: rgba(0, 0, 0, 0.2); }
+  /* line 228, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  span.separator.top {
+    top: 0; }
+
+/* line 302, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.disable-selection {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/*** CENTRAL SPRITES ***/
+/* line 45, ../../../../app/assets/stylesheets/front/common/sprites.css.scss */
+.central_icons-sprite, a.double_arrow, h3.double_arrow, section a.back, section a.back:hover, section a.previous, section a.previous:hover, section a.next, section a.next:hover, ul.features li, section.sessions form a.checkbox, section.sessions form a.checkbox:hover, section.sessions form a.checkbox.error, section.sessions form a.checkbox.checked, section.sessions form a.checkbox.checked:hover, section.sessions form div.field_error, body.developers.index ul.features li {
+  background: url('/images/central_icons-s3cc1ff9ad8.png') no-repeat; }
+
+/* line 95, ../../../../app/assets/stylesheets/front/common/sprites.css.scss */
+.logos-sprite, h1 a, header.white h1 a, header.white h1 a:hover, header.light h1 a, header.light h1 a:hover, footer span.cartodb, footer.short a.cartodb {
+  background: url('/images/logos-sd17a66774a.png') no-repeat; }
+
+/* line 13, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+a.button.green,
+input.green,
+button.green,
+input.green {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  padding: 14px 34px 13px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #94be42), color-stop(100%, #7fa938));
+  background: -webkit-linear-gradient(#94be42, #7fa938);
+  background: -moz-linear-gradient(#94be42, #7fa938);
+  background: -o-linear-gradient(#94be42, #7fa938);
+  background: -ms-linear-gradient(#94be42, #7fa938);
+  background: linear-gradient(#94be42, #7fa938);
+  border: 1px solid #1E5496;
+  background: #94BE42\9;
+  border: 1px solid #709631\9;
+  font: bold 19px "Helvetica Bold",Arial;
+  color: white;
+  text-shadow: 0 1px #455D1E;
+  text-decoration: none;
+  letter-spacing: -1px;
+  line-height: normal;
+  /* Tiny text below */
+  /* With border */
+  /* Expand */
+  /* Sessions type */
+  /* Bigger */
+  /* Checkbox*/ }
+  /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+  a.button.green,
+  input.green,
+  button.green,
+  input.green {
+    *display: inline; }
+  /* line 30, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.green span,
+  input.green span,
+  button.green span,
+  input.green span {
+    display: block;
+    margin-top: 1px;
+    font: normal 13px "Helvetica Neue",Arial;
+    color: #415719;
+    text-align: center;
+    text-shadow: 0 1px #B4E650; }
+  /* line 39, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.green:hover, a.button.green:focus,
+  input.green:hover,
+  input.green:focus,
+  button.green:hover,
+  button.green:focus,
+  input.green:hover,
+  input.green:focus {
+    outline: none;
+    text-shadow: 0 1px #2A3811;
+    cursor: pointer;
+    background: #7FA938\9; }
+  /* line 47, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.green:active,
+  input.green:active,
+  button.green:active,
+  input.green:active {
+    background: #94BE42;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #94be42), color-stop(100%, #799e33));
+    background: -webkit-linear-gradient(#94be42, #799e33);
+    background: -moz-linear-gradient(#94be42, #799e33);
+    background: -o-linear-gradient(#94be42, #799e33);
+    background: -ms-linear-gradient(#94be42, #799e33);
+    background: linear-gradient(#94be42, #799e33);
+    -webkit-box-shadow: rgba(0, 0, 0, 0.75) 0 1px 4px 0 inset;
+    -moz-box-shadow: rgba(0, 0, 0, 0.75) 0 1px 4px 0 inset;
+    box-shadow: rgba(0, 0, 0, 0.75) 0 1px 4px 0 inset; }
+  /* line 54, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.green.border,
+  input.green.border,
+  button.green.border,
+  input.green.border {
+    padding: 12px 34px 11px;
+    border: 1px solid #66892B;
+    border: 1px solid #7FA938\9;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+    /* line 60, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+    a.button.green.border.short,
+    input.green.border.short,
+    button.green.border.short,
+    input.green.border.short {
+      padding: 12px 24px 11px; }
+    /* line 64, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+    a.button.green.border:hover, a.button.green.border:focus,
+    input.green.border:hover,
+    input.green.border:focus,
+    button.green.border:hover,
+    button.green.border:focus,
+    input.green.border:hover,
+    input.green.border:focus {
+      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #94be42), color-stop(100%, #709631));
+      background: -webkit-linear-gradient(#94be42, #709631);
+      background: -moz-linear-gradient(#94be42, #709631);
+      background: -o-linear-gradient(#94be42, #709631);
+      background: -ms-linear-gradient(#94be42, #709631);
+      background: linear-gradient(#94be42, #709631); }
+    /* line 68, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+    a.button.green.border:active,
+    input.green.border:active,
+    button.green.border:active,
+    input.green.border:active {
+      background: #94BE42;
+      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #94be42), color-stop(100%, #799e33));
+      background: -webkit-linear-gradient(#94be42, #799e33);
+      background: -moz-linear-gradient(#94be42, #799e33);
+      background: -o-linear-gradient(#94be42, #799e33);
+      background: -ms-linear-gradient(#94be42, #799e33);
+      background: linear-gradient(#94be42, #799e33);
+      -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0 1px 4px 0 inset;
+      -moz-box-shadow: rgba(0, 0, 0, 0.45) 0 1px 4px 0 inset;
+      box-shadow: rgba(0, 0, 0, 0.45) 0 1px 4px 0 inset; }
+  /* line 76, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.green.expand,
+  input.green.expand,
+  button.green.expand,
+  input.green.expand {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    display: block; }
+  /* line 79, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.green.sessions,
+  input.green.sessions,
+  button.green.sessions,
+  input.green.sessions {
+    width: 312px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center; }
+  /* line 86, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.green.signin,
+  input.green.signin,
+  button.green.signin,
+  input.green.signin {
+    font: bold 12px "Segoe UI Bold", "Helvetica Bold", "Arial";
+    padding: 7px 14px 8px; }
+  /* line 92, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.green.bigger,
+  input.green.bigger,
+  button.green.bigger,
+  input.green.bigger {
+    padding: 10px 40px 8px; }
+  /* line 95, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.green.checkbox,
+  input.green.checkbox,
+  button.green.checkbox,
+  input.green.checkbox {
+    padding: 10px 12px 9px 12px;
+    display: block;
+    letter-spacing: 0;
+    font-size: 15px;
+    line-height: 18px;
+    background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #94be42), color-stop(100%, #7fa938)) 0 0;
+    background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, -webkit-linear-gradient(#94be42, #7fa938) 0 0;
+    background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, -moz-linear-gradient(#94be42, #7fa938) 0 0;
+    background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, -o-linear-gradient(#94be42, #7fa938) 0 0;
+    background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, -ms-linear-gradient(#94be42, #7fa938) 0 0;
+    background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, linear-gradient(#94be42, #7fa938) 0 0; }
+    /* line 103, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+    a.button.green.checkbox:hover, a.button.green.checkbox:focus,
+    input.green.checkbox:hover,
+    input.green.checkbox:focus,
+    button.green.checkbox:hover,
+    button.green.checkbox:focus,
+    input.green.checkbox:hover,
+    input.green.checkbox:focus {
+      background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #94be42), color-stop(100%, #709631)) 0 0;
+      background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, -webkit-linear-gradient(#94be42, #709631) 0 0;
+      background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, -moz-linear-gradient(#94be42, #709631) 0 0;
+      background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, -o-linear-gradient(#94be42, #709631) 0 0;
+      background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, -ms-linear-gradient(#94be42, #709631) 0 0;
+      background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, linear-gradient(#94be42, #709631) 0 0; }
+    /* line 106, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+    a.button.green.checkbox:active,
+    input.green.checkbox:active,
+    button.green.checkbox:active,
+    input.green.checkbox:active {
+      background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #709631), color-stop(100%, #94be42)) 0 0;
+      background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, -webkit-linear-gradient(#709631, #94be42) 0 0;
+      background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, -moz-linear-gradient(#709631, #94be42) 0 0;
+      background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, -o-linear-gradient(#709631, #94be42) 0 0;
+      background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, -ms-linear-gradient(#709631, #94be42) 0 0;
+      background: url('/images/central_icons-s3cc1ff9ad8.png') 25px -1633px no-repeat, linear-gradient(#709631, #94be42) 0 0; }
+
+/* line 117, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+a.button.blue,
+input.blue,
+button.blue {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  padding: 14px 34px 13px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0 0 0 3px, rgba(0, 0, 0, 0) 0 1px 4px 0 inset;
+  -moz-box-shadow: rgba(255, 255, 255, 0.2) 0 0 0 3px, rgba(0, 0, 0, 0) 0 1px 4px 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.2) 0 0 0 3px, rgba(0, 0, 0, 0) 0 1px 4px 0 inset;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #519fd9), color-stop(100%, #437abd));
+  background: -webkit-linear-gradient(#519fd9, #437abd);
+  background: -moz-linear-gradient(#519fd9, #437abd);
+  background: -o-linear-gradient(#519fd9, #437abd);
+  background: -ms-linear-gradient(#519fd9, #437abd);
+  background: linear-gradient(#519fd9, #437abd);
+  font: bold 19px "Helvetica Bold",Arial;
+  color: white;
+  text-shadow: 0 1px #26537D;
+  text-decoration: none;
+  letter-spacing: -1px;
+  line-height: normal;
+  background: #519FD9\9;
+  border: 1px solid #437ABD\9;
+  -webkit-transform-style: "linear";
+  transform-style: "linear";
+  -webkit-transition-property: box-shadow;
+  -moz-transition-property: box-shadow;
+  -ms-transition-property: box-shadow;
+  -o-transition-property: box-shadow;
+  transition-property: box-shadow;
+  -webkit-transition-duration: 250ms;
+  -moz-transition-duration: 250ms;
+  -ms-transition-duration: 250ms;
+  -o-transition-duration: 250ms;
+  transition-duration: 250ms;
+  /* With border */
+  /* Expand */
+  /* No shadow */
+  /* Bigger */
+  /* video type */
+  /* download type */ }
+  /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+  a.button.blue,
+  input.blue,
+  button.blue {
+    *display: inline; }
+  /* line 135, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.blue:hover, a.button.blue:focus,
+  input.blue:hover,
+  input.blue:focus,
+  button.blue:hover,
+  button.blue:focus {
+    outline: none;
+    text-shadow: 0 1px #183651;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 3px;
+    -moz-box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 3px;
+    box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 3px;
+    background: #437ABD\9; }
+  /* line 142, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.blue:active,
+  input.blue:active,
+  button.blue:active {
+    background: #1E5496\9;
+    -webkit-box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 3px, rgba(0, 0, 0, 0.55) 0 1px 4px 0 inset;
+    -moz-box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 3px, rgba(0, 0, 0, 0.55) 0 1px 4px 0 inset;
+    box-shadow: rgba(255, 255, 255, 0.6) 0 0 0 3px, rgba(0, 0, 0, 0.55) 0 1px 4px 0 inset; }
+  /* line 148, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.blue.border,
+  input.blue.border,
+  button.blue.border {
+    padding: 12px 0 11px;
+    text-align: center;
+    border: 1px solid #1E5496; }
+  /* line 155, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.blue.expand,
+  input.blue.expand,
+  button.blue.expand {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    display: block; }
+  /* line 158, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.blue.no_shadow,
+  input.blue.no_shadow,
+  button.blue.no_shadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+  /* line 161, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.blue.bigger,
+  input.blue.bigger,
+  button.blue.bigger {
+    padding: 10px 40px 8px; }
+  /* line 164, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.blue.video,
+  input.blue.video,
+  button.blue.video {
+    display: block;
+    padding: 11px 0 7px 40px;
+    background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px #519fd9;
+    background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #519fd9), color-stop(100%, #437abd)) 0 0;
+    background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, -webkit-linear-gradient(#519fd9, #437abd) 0 0;
+    background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, -moz-linear-gradient(#519fd9, #437abd) 0 0;
+    background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, -o-linear-gradient(#519fd9, #437abd) 0 0;
+    background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, -ms-linear-gradient(#519fd9, #437abd) 0 0;
+    background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, linear-gradient(#519fd9, #437abd) 0 0;
+    font-size: 17px;
+    line-height: 20px;
+    line-height: normal\9; }
+    /* line 173, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+    a.button.blue.video:hover, a.button.blue.video:focus,
+    input.blue.video:hover,
+    input.blue.video:focus,
+    button.blue.video:hover,
+    button.blue.video:focus {
+      text-shadow: 0 1px black;
+      background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px #437abd;
+      background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #519fd9), color-stop(100%, #437abd)) 0 0;
+      background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, -webkit-linear-gradient(#519fd9, #437abd) 0 0;
+      background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, -moz-linear-gradient(#519fd9, #437abd) 0 0;
+      background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, -o-linear-gradient(#519fd9, #437abd) 0 0;
+      background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, -ms-linear-gradient(#519fd9, #437abd) 0 0;
+      background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, linear-gradient(#519fd9, #437abd) 0 0; }
+    /* line 179, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+    a.button.blue.video:active,
+    input.blue.video:active,
+    button.blue.video:active {
+      background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px #1e5496;
+      background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #437abd), color-stop(100%, #519fd9)) 0 0;
+      background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, -webkit-linear-gradient(#437abd, #519fd9) 0 0;
+      background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, -moz-linear-gradient(#437abd, #519fd9) 0 0;
+      background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, -o-linear-gradient(#437abd, #519fd9) 0 0;
+      background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, -ms-linear-gradient(#437abd, #519fd9) 0 0;
+      background: url('/images/central_icons/play_blue.png') no-repeat 17px 2px, linear-gradient(#437abd, #519fd9) 0 0; }
+  /* line 186, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.blue.download,
+  input.blue.download,
+  button.blue.download {
+    display: block;
+    padding: 11px 0 7px 54px;
+    background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px #519fd9;
+    background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #519fd9), color-stop(100%, #437abd)) 0 0;
+    background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, -webkit-linear-gradient(#519fd9, #437abd) 0 0;
+    background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, -moz-linear-gradient(#519fd9, #437abd) 0 0;
+    background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, -o-linear-gradient(#519fd9, #437abd) 0 0;
+    background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, -ms-linear-gradient(#519fd9, #437abd) 0 0;
+    background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, linear-gradient(#519fd9, #437abd) 0 0;
+    font-size: 17px;
+    line-height: 20px;
+    line-height: normal\9; }
+    /* line 195, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+    a.button.blue.download:hover, a.button.blue.download:focus,
+    input.blue.download:hover,
+    input.blue.download:focus,
+    button.blue.download:hover,
+    button.blue.download:focus {
+      text-shadow: 0 1px black;
+      background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px #437abd;
+      background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #519fd9), color-stop(100%, #437abd)) 0 0;
+      background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, -webkit-linear-gradient(#519fd9, #437abd) 0 0;
+      background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, -moz-linear-gradient(#519fd9, #437abd) 0 0;
+      background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, -o-linear-gradient(#519fd9, #437abd) 0 0;
+      background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, -ms-linear-gradient(#519fd9, #437abd) 0 0;
+      background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, linear-gradient(#519fd9, #437abd) 0 0; }
+    /* line 201, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+    a.button.blue.download:active,
+    input.blue.download:active,
+    button.blue.download:active {
+      background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px #1e5496;
+      background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #437abd), color-stop(100%, #519fd9)) 0 0;
+      background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, -webkit-linear-gradient(#437abd, #519fd9) 0 0;
+      background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, -moz-linear-gradient(#437abd, #519fd9) 0 0;
+      background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, -o-linear-gradient(#437abd, #519fd9) 0 0;
+      background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, -ms-linear-gradient(#437abd, #519fd9) 0 0;
+      background: url('/images/central_icons/download_blue.png') no-repeat 13px 2px, linear-gradient(#437abd, #519fd9) 0 0; }
+  /* line 207, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+  a.button.blue.small,
+  input.blue.small,
+  button.blue.small {
+    padding: 9px 10px;
+    font-size: 17px;
+    letter-spacing: 0; }
+
+/* line 218, ../../../../app/assets/stylesheets/front/common/buttons.css.scss */
+a.button.grey span,
+button.grey span,
+input[type="submit"].grey span {
+  display: block;
+  margin-top: 1px;
+  font: normal 13px "Helvetica Neue",Arial;
+  color: #888888;
+  text-align: center;
+  text-shadow: 0 1px #FFFFFF; }
+
+/*** CENTRAL SPRITES ***/
+/* line 45, ../../../../app/assets/stylesheets/front/common/sprites.css.scss */
+.central_icons-sprite, a.double_arrow, h3.double_arrow, section a.back, section a.back:hover, section a.previous, section a.previous:hover, section a.next, section a.next:hover, ul.features li, section.sessions form a.checkbox, section.sessions form a.checkbox:hover, section.sessions form a.checkbox.error, section.sessions form a.checkbox.checked, section.sessions form a.checkbox.checked:hover, section.sessions form div.field_error, body.developers.index ul.features li {
+  background: url('/images/central_icons-s3cc1ff9ad8.png') no-repeat; }
+
+/* line 95, ../../../../app/assets/stylesheets/front/common/sprites.css.scss */
+.logos-sprite, h1 a, header.white h1 a, header.white h1 a:hover, header.light h1 a, header.light h1 a:hover, footer span.cartodb, footer.short a.cartodb {
+  background: url('/images/logos-sd17a66774a.png') no-repeat; }
+
+/*** CENTRAL SPRITES ***/
+/* line 45, ../../../../app/assets/stylesheets/front/common/sprites.css.scss */
+.central_icons-sprite, a.double_arrow, h3.double_arrow, section a.back, section a.back:hover, section a.previous, section a.previous:hover, section a.next, section a.next:hover, ul.features li, section.sessions form a.checkbox, section.sessions form a.checkbox:hover, section.sessions form a.checkbox.error, section.sessions form a.checkbox.checked, section.sessions form a.checkbox.checked:hover, section.sessions form div.field_error, body.developers.index ul.features li {
+  background: url('/images/central_icons-s3cc1ff9ad8.png') no-repeat; }
+
+/* line 95, ../../../../app/assets/stylesheets/front/common/sprites.css.scss */
+.logos-sprite, h1 a, header.white h1 a, header.white h1 a:hover, header.light h1 a, header.light h1 a:hover, footer span.cartodb, footer.short a.cartodb {
+  background: url('/images/logos-sd17a66774a.png') no-repeat; }
+
+/*
+ * DOM ELEMENTS
+ */
+/* line 15, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+a {
+  color: #397dba;
+  text-decoration: underline; }
+  /* line 20, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  a:hover, a:focus {
+    outline: 0 none;
+    border: 0;
+    color: #2b6191;
+    cursor: pointer;
+    text-decoration: underline; }
+  /* line 28, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  a.disabled {
+    cursor: default;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5; }
+    /* line 32, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+    a.disabled:hover {
+      text-decoration: none;
+      color: #397dba; }
+  /* line 38, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  a.light {
+    color: #A1BDDE; }
+  /* line 40, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  a.grey {
+    font-style: italic;
+    color: #666;
+    text-decoration: none; }
+    /* line 45, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+    a.grey:hover {
+      color: #333; }
+  /* line 48, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  a.double_arrow {
+    padding: 0 20px 0 0;
+    background-position: 100% -3453px;
+    white-space: nowrap; }
+  /* line 54, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  a.small {
+    font-size: 13px; }
+  /* line 56, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  a.vizzuality {
+    color: #999;
+    text-decoration: none; }
+    /* line 60, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+    a.vizzuality:hover {
+      color: #96C93C; }
+
+/* line 64, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+i {
+  font-style: italic; }
+
+/* line 67, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+h1 {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  width: 121px; }
+  /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+  h1 {
+    *display: inline; }
+  /* line 71, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h1 a {
+    display: block;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    text-transform: uppercase;
+    width: 130px;
+    height: 54px;
+    background-position: 0 -5948px; }
+  /* line 79, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h1.sessions {
+    display: block;
+    width: auto;
+    font: bold 31px "Segoe UI Bold", "Helvetica Bold", "Helvetica", Arial;
+    color: #333;
+    letter-spacing: -1px;
+    line-height: 32px;
+    line-height: normal\9;
+    word-spacing: -1px; }
+  /* line 90, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h1.compact {
+    line-height: 31px;
+    line-height: normal\9; }
+
+/* line 97, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+h2 {
+  font: bold 34px "Segoe UI Bold", "Helvetica Bold", "Helvetica", Arial;
+  color: white;
+  letter-spacing: -1px;
+  text-shadow: 0 -1px black;
+  line-height: 42px; }
+  /* line 104, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h2.compact {
+    line-height: 34px; }
+  /* line 105, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h2.blue_shadow {
+    text-shadow: 0 1px #245080; }
+  /* line 106, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h2.revert {
+    text-shadow: 0 1px black; }
+  /* line 107, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h2.big {
+    font-size: 45px;
+    line-height: normal\9; }
+  /* line 111, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h2.bigger {
+    font-size: 51px;
+    line-height: normal\9;
+    line-height: 60px; }
+  /* line 116, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h2.dark {
+    color: #333;
+    text-shadow: none; }
+  /* line 120, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h2.ngo {
+    font-size: 36px;
+    text-shadow: none; }
+
+/* line 126, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+h3 {
+  font: bold 23px "Segoe UI Bold", "Helvetica Bold", "Helvetica", Arial;
+  color: #333333;
+  letter-spacing: -1px;
+  line-height: 24px;
+  line-height: normal\9; }
+  /* line 133, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h3.light {
+    color: #666666; }
+  /* line 134, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h3.lighter {
+    color: #999999; }
+  /* line 135, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h3.big {
+    font-size: 25px; }
+  /* line 137, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h3.double_arrow {
+    padding: 0 20px 0 0;
+    background-position: 100% -3453px;
+    white-space: nowrap;
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    h3.double_arrow {
+      *display: inline; }
+
+/* line 145, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+h4 {
+  font: bold 39px "Segoe UI Bold", "Helvetica Bold", "Helvetica", Arial;
+  color: #333333;
+  letter-spacing: -3px;
+  line-height: 30px; }
+  /* line 145, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  h4 small {
+    font-size: 27px;
+    line-height: normal; }
+
+/* line 146, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+h5 {
+  font: bold 19px "Segoe UI Bold", "Helvetica Bold", "Helvetica", Arial;
+  color: #333333;
+  letter-spacing: -1px;
+  line-height: 15px; }
+
+/* line 148, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+p {
+  font: normal 15px "Helvetica Neue", "Helvetica", Arial;
+  color: #333333;
+  line-height: normal; }
+  /* line 150, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  p.light {
+    color: #666666; }
+    /* line 150, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+    p.light a {
+      text-decoration: none; }
+  /* line 151, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  p.lighter {
+    color: #999999; }
+    /* line 151, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+    p.lighter a {
+      text-decoration: none; }
+  /* line 152, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  p.small {
+    font-size: 13px; }
+  /* line 153, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  p.big {
+    font-size: 17px; }
+  /* line 154, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  p.blue {
+    color: #203D5C; }
+  /* line 155, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  p.error {
+    color: #E95850; }
+    /* line 155, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+    p.error a {
+      color: #E95850;
+      text-decoration: underline; }
+      /* line 155, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+      p.error a:hover {
+        color: #A13D37; }
+  /* line 156, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  p.italic {
+    font-style: italic; }
+
+/* line 159, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+nav a {
+  margin: 0 0 0 23px;
+  font: normal 13px "Helvetica Neue", "Helvetica", Arial;
+  text-decoration: none; }
+
+/* line 165, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+dt {
+  font: bold 12px "Segoe UI Bold", "Helvetica Bold", "Helvetica", Arial;
+  color: #333; }
+
+/* line 170, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+img.floating {
+  position: absolute;
+  bottom: 0; }
+  /* line 174, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  img.floating.right {
+    right: 0; }
+
+/* line 177, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+b {
+  font-weight: bold; }
+
+/*
+ * CLASSES
+ */
+/* line 184, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.right {
+  float: right; }
+
+/* line 185, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.left {
+  float: left; }
+
+/* line 187, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin50 {
+  margin-top: 50px; }
+
+/* line 188, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin40 {
+  margin-top: 40px; }
+
+/* line 189, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin35 {
+  margin-top: 35px; }
+
+/* line 190, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin30 {
+  margin-top: 30px; }
+
+/* line 191, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin25 {
+  margin-top: 25px; }
+
+/* line 192, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin20 {
+  margin-top: 20px; }
+
+/* line 193, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin15 {
+  margin-top: 15px; }
+
+/* line 194, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin10 {
+  margin-top: 10px !important; }
+
+/* line 195, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.margin5 {
+  margin-top: 5px; }
+
+/* line 197, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap; }
+
+/* line 203, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.hide {
+  display: none; }
+
+/* line 205, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.wrap {
+  position: relative;
+  width: 880px;
+  margin: 0 auto; }
+
+/* line 211, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.overflow {
+  overflow: visible; }
+
+/* line 213, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.center {
+  width: 100%;
+  text-align: center; }
+
+/* line 218, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+span.separator {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  background: #E9E9E9\9; }
+  /* line 227, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  span.separator.dark {
+    background: rgba(0, 0, 0, 0.2); }
+  /* line 228, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+  span.separator.top {
+    top: 0; }
+
+/* line 302, ../../../../app/assets/stylesheets/front/common/helpers.css.scss */
+.disable-selection {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/*
+ * Styles for tipsy tooltip
+ */
+/* line 9, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy {
+  font-size: 11px;
+  position: absolute;
+  padding: 5px;
+  z-index: 100000; }
+
+/* line 10, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy-inner {
+  background-color: #000;
+  color: #FFF;
+  max-width: 200px;
+  padding: 5px 8px 7px 8px;
+  text-align: center; }
+
+/* Rounded corners */
+/* line 13, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy-inner {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+
+/* Uncomment for shadow */
+/*.tipsy-inner { box-shadow: 0 0 5px #000000; -webkit-box-shadow: 0 0 5px #000000; -moz-box-shadow: 0 0 5px #000000; }*/
+/* line 18, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  border: 5px dashed #000; }
+
+/* Rules to colour arrows */
+/* line 21, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy-arrow-n {
+  border-bottom-color: #000; }
+
+/* line 22, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy-arrow-s {
+  border-top-color: #000; }
+
+/* line 23, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy-arrow-e {
+  border-left-color: #000; }
+
+/* line 24, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy-arrow-w {
+  border-right-color: #000; }
+
+/* line 26, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy-n .tipsy-arrow {
+  top: 0px;
+  left: 50%;
+  margin-left: -5px;
+  border-bottom-style: solid;
+  border-top: none;
+  border-left-color: transparent;
+  border-right-color: transparent; }
+
+/* line 27, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy-nw .tipsy-arrow {
+  top: 0;
+  left: 10px;
+  border-bottom-style: solid;
+  border-top: none;
+  border-left-color: transparent;
+  border-right-color: transparent; }
+
+/* line 28, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy-ne .tipsy-arrow {
+  top: 0;
+  right: 10px;
+  border-bottom-style: solid;
+  border-top: none;
+  border-left-color: transparent;
+  border-right-color: transparent; }
+
+/* line 29, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy-s .tipsy-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-top-style: solid;
+  border-bottom: none;
+  border-left-color: transparent;
+  border-right-color: transparent; }
+
+/* line 30, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy-sw .tipsy-arrow {
+  bottom: 0;
+  left: 10px;
+  border-top-style: solid;
+  border-bottom: none;
+  border-left-color: transparent;
+  border-right-color: transparent; }
+
+/* line 31, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy-se .tipsy-arrow {
+  bottom: 0;
+  right: 10px;
+  border-top-style: solid;
+  border-bottom: none;
+  border-left-color: transparent;
+  border-right-color: transparent; }
+
+/* line 32, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy-e .tipsy-arrow {
+  right: 0;
+  top: 50%;
+  margin-top: -5px;
+  border-left-style: solid;
+  border-right: none;
+  border-top-color: transparent;
+  border-bottom-color: transparent; }
+
+/* line 33, ../../../../app/assets/stylesheets/plugins/tipsy.css.scss */
+.tipsy-w .tipsy-arrow {
+  left: 0;
+  top: 50%;
+  margin-top: -5px;
+  border-right-style: solid;
+  border-left: none;
+  border-top-color: transparent;
+  border-bottom-color: transparent; }
+
+/* line 12, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+body {
+  background: url('/images/backgrounds/noise.jpg') repeat 0 0; }
+
+/*
+ * BACKGROUNDS
+ */
+/* line 20, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+div.background {
+  position: relative;
+  width: 100%;
+  min-width: 960px;
+  overflow: hidden; }
+  /* line 28, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.blue.carto {
+    background: url('/images/backgrounds/white-carto.png') repeat 0 0 #377cb9;
+    background: url('/images/backgrounds/white-carto.png') repeat 0 0, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #519fd9), color-stop(100%, #1e5496)) 0 0;
+    background: url('/images/backgrounds/white-carto.png') repeat 0 0, -webkit-linear-gradient(#519fd9, #1e5496) 0 0;
+    background: url('/images/backgrounds/white-carto.png') repeat 0 0, -moz-linear-gradient(#519fd9, #1e5496) 0 0;
+    background: url('/images/backgrounds/white-carto.png') repeat 0 0, -o-linear-gradient(#519fd9, #1e5496) 0 0;
+    background: url('/images/backgrounds/white-carto.png') repeat 0 0, -ms-linear-gradient(#519fd9, #1e5496) 0 0;
+    background: url('/images/backgrounds/white-carto.png') repeat 0 0, linear-gradient(#519fd9, #1e5496) 0 0; }
+  /* line 33, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.blue.grid {
+    background: url('/images/backgrounds/grid.png') repeat 0 -16px #377cb9;
+    background: url('/images/backgrounds/grid.png') repeat 0 -16px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #519fd9), color-stop(100%, #1e5496)) 0 0;
+    background: url('/images/backgrounds/grid.png') repeat 0 -16px, -webkit-linear-gradient(#519fd9, #1e5496) 0 0;
+    background: url('/images/backgrounds/grid.png') repeat 0 -16px, -moz-linear-gradient(#519fd9, #1e5496) 0 0;
+    background: url('/images/backgrounds/grid.png') repeat 0 -16px, -o-linear-gradient(#519fd9, #1e5496) 0 0;
+    background: url('/images/backgrounds/grid.png') repeat 0 -16px, -ms-linear-gradient(#519fd9, #1e5496) 0 0;
+    background: url('/images/backgrounds/grid.png') repeat 0 -16px, linear-gradient(#519fd9, #1e5496) 0 0; }
+  /* line 40, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.purple.carto {
+    background: url('/images/backgrounds/white-carto.png') repeat 0 0 #555d76;
+    background: url('/images/backgrounds/white-carto.png') repeat 0 0, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #555d76), color-stop(100%, #5e376e)) 0 0;
+    background: url('/images/backgrounds/white-carto.png') repeat 0 0, -webkit-linear-gradient(#555d76, #5e376e) 0 0;
+    background: url('/images/backgrounds/white-carto.png') repeat 0 0, -moz-linear-gradient(#555d76, #5e376e) 0 0;
+    background: url('/images/backgrounds/white-carto.png') repeat 0 0, -o-linear-gradient(#555d76, #5e376e) 0 0;
+    background: url('/images/backgrounds/white-carto.png') repeat 0 0, -ms-linear-gradient(#555d76, #5e376e) 0 0;
+    background: url('/images/backgrounds/white-carto.png') repeat 0 0, linear-gradient(#555d76, #5e376e) 0 0; }
+  /* line 46, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.light {
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 0 117px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0 117px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0 117px rgba(0, 0, 0, 0.15); }
+  /* line 52, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.dark {
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0 117px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0 117px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0 117px rgba(0, 0, 0, 0.3); }
+  /* line 58, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.white {
+    background: white; }
+  /* line 62, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.realtime {
+    background: url('/images/backgrounds/realtime_bkg.jpg') repeat-x center center #666666; }
+  /* line 66, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.ngos {
+    background: url('/images/backgrounds/ngos_bkg.jpg') repeat center bottom; }
+  /* line 70, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.realtime {
+    background: url('/images/backgrounds/realtime_bkg.jpg') repeat-x center center #666666; }
+  /* line 73, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.journalism {
+    background: url('/images/backgrounds/journalism_bkg_3.jpg') no-repeat center center #666666; }
+  /* line 77, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.academic {
+    background: url('/images/backgrounds/academic_bkg.jpg') repeat center center; }
+  /* line 81, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.agencies {
+    background: url('/images/backgrounds/agencies_bkg.jpg') repeat center center; }
+  /* line 85, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.mobility {
+    background: url('/images/backgrounds/mobility_bkg.jpg') repeat center center; }
+  /* line 90, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.border {
+    border-top: 1px solid #E5E5E5; }
+  /* line 94, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.fixed {
+    height: 580px; }
+    /* line 98, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    div.background.fixed.min {
+      height: 340px; }
+  /* line 101, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background.floating {
+    position: absolute;
+    top: 115px;
+    left: 0;
+    margin: 0; }
+    /* line 107, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    div.background.floating.max {
+      top: 105px;
+      padding-top: 30px; }
+  /* line 113, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  div.background .rule {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    left: 0;
+    -webkit-box-shadow: 0 -3px 3px 3px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 0 -3px 3px 3px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 -3px 3px 3px rgba(0, 0, 0, 0.06);
+    background: rgba(0, 0, 0, 0.35);
+    bottom: 0;
+    z-index: 10; }
+
+/* line 125, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+header {
+  width: 880px;
+  margin: 35px auto 0;
+  overflow: hidden; }
+  /* line 130, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  header nav {
+    margin: 9px 0 0 0;
+    letter-spacing: -4px; }
+    /* line 134, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    header nav a {
+      display: -moz-inline-box;
+      -moz-box-orient: vertical;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      margin: 0 0 0 10px;
+      padding: 7px 10px 8px;
+      font: bold 12px "Segoe UI Bold","Helvetica Bold","Arial";
+      color: #2A4A6A;
+      line-height: normal;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0;
+      background: rgba(0, 0, 0, 0);
+      -webkit-transition-property: background;
+      -moz-transition-property: background;
+      -ms-transition-property: background;
+      -o-transition-property: background;
+      transition-property: background;
+      -webkit-transition-duration: 0.7s;
+      -moz-transition-duration: 0.7s;
+      -ms-transition-duration: 0.7s;
+      -o-transition-duration: 0.7s;
+      transition-duration: 0.7s;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px; }
+      /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+      header nav a {
+        *display: inline; }
+      /* line 149, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      header nav a:hover, header nav a.selected {
+        color: #52A0DA;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        background: #2A4A6A\9;
+        background: rgba(0, 0, 0, 0.5);
+        text-decoration: none;
+        -webkit-transition-property: background;
+        -moz-transition-property: background;
+        -ms-transition-property: background;
+        -o-transition-property: background;
+        transition-property: background;
+        -webkit-transition-duration: 0.4s;
+        -moz-transition-duration: 0.4s;
+        -ms-transition-duration: 0.4s;
+        -o-transition-duration: 0.4s;
+        transition-duration: 0.4s; }
+      /* line 159, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      header nav a.selected {
+        cursor: default; }
+  /* line 165, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  header.white {
+    margin: 30px auto; }
+    /* line 168, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    header.white h1 a {
+      width: 130px;
+      height: 54px;
+      background-position: 0 -3858px; }
+      /* line 172, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      header.white h1 a:hover {
+        background-position: 0 -3858px; }
+    /* line 175, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    header.white nav {
+      margin: 14px 0 0 0; }
+      /* line 177, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      header.white nav a {
+        color: white; }
+        /* line 179, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+        header.white nav a:hover, header.white nav a.selected {
+          background: #232323\9; }
+  /* line 186, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  header.light {
+    margin: 25px auto 20px; }
+    /* line 189, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    header.light h1 a {
+      width: 130px;
+      height: 54px;
+      background-position: 0 -6353px; }
+      /* line 193, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      header.light h1 a:hover {
+        background-position: 0 -6353px; }
+    /* line 196, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    header.light nav a {
+      color: #fff; }
+      /* line 199, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      header.light nav a:hover {
+        color: #fff; }
+      /* line 203, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      header.light nav a.selected {
+        color: rgba(0, 0, 0, 0.4);
+        cursor: default;
+        background: none; }
+        /* line 208, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+        header.light nav a.selected:hover {
+          background: none;
+          -webkit-transition: background 0.4s;
+          -moz-transition: background 0.4s;
+          -ms-transition: background 0.4s;
+          -o-transition: background 0.4s;
+          transition: background 0.4s; }
+
+/*
+ * INTRO
+ */
+/* line 222, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+.intro {
+  width: 962px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 10;
+  position: relative; }
+  /* line 229, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  .intro .light {
+    color: #FFF;
+    opacity: .75;
+    text-shadow: 0 -1px black; }
+  /* line 235, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  .intro .button.green {
+    border: 1px solid #29557b;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none; }
+    /* line 239, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    .intro .button.green:active {
+      background: #94BE42;
+      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #94be42), color-stop(100%, #799e33));
+      background: -webkit-linear-gradient(#94be42, #799e33);
+      background: -moz-linear-gradient(#94be42, #799e33);
+      background: -o-linear-gradient(#94be42, #799e33);
+      background: -ms-linear-gradient(#94be42, #799e33);
+      background: linear-gradient(#94be42, #799e33);
+      -webkit-box-shadow: rgba(0, 0, 0, 0.75) 0 1px 4px 0 inset;
+      -moz-box-shadow: rgba(0, 0, 0, 0.75) 0 1px 4px 0 inset;
+      box-shadow: rgba(0, 0, 0, 0.75) 0 1px 4px 0 inset; }
+  /* line 246, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  .intro .button.blue {
+    border: 1px solid #29557b; }
+    /* line 249, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    .intro .button.blue:active {
+      background: #1E5496\9;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.55) 0 1px 4px 0 inset;
+      -moz-box-shadow: rgba(0, 0, 0, 0.55) 0 1px 4px 0 inset;
+      box-shadow: rgba(0, 0, 0, 0.55) 0 1px 4px 0 inset; }
+  /* line 255, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  .intro img {
+    float: left; }
+
+/* SECTIONS */
+/* line 260, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+section {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  background: white;
+  /* skeleton of a section */
+  /* sessions flat section*/
+  /* section to leftwards */
+  /* black section */
+  /* blue section */
+  /* grey section */
+  /* add shadow to the section */
+  /* border radius only in the top */
+  /* border radius only in the bottom */
+  /* grey top line */
+  /* featured case info */
+  /* separate between contents*/
+  /* back button */ }
+  /* line 269, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section div.header {
+    padding: 40px;
+    border-bottom: 1px solid #E5E5E5; }
+  /* line 273, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section div.footer {
+    padding: 40px;
+    border-top: 1px solid #E5E5E5; }
+  /* line 277, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section div.content {
+    position: relative;
+    display: block;
+    padding: 40px;
+    /* content options */ }
+    /* line 283, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section div.content.overflow {
+      overflow: hidden; }
+    /* line 284, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section div.content.no_padding {
+      width: 960px;
+      padding: 0; }
+    /* line 285, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section div.content.less_padding {
+      overflow: hidden;
+      padding-top: 25px;
+      padding-bottom: 25px; }
+  /* line 290, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions {
+    position: relative;
+    width: 392px;
+    margin: 100px auto 85px; }
+    /* line 295, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.sessions div.content {
+      padding-top: 30px; }
+      /* line 298, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      section.sessions div.content .sep {
+        height: 1px;
+        width: 200px;
+        margin: 15px auto 0;
+        background: #e5e5e5; }
+    /* line 306, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.sessions div.footer {
+      padding: 35px 0 38px; }
+    /* line 310, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.sessions p.forgot {
+      width: 315px; }
+  /* line 314, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.leftwards {
+    /* terms, blog,... layout */ }
+    /* line 315, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.leftwards div.left {
+      width: 599px; }
+    /* line 316, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.leftwards div.right {
+      width: 241px; }
+    /* line 320, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.leftwards.nav div.left {
+      display: -moz-inline-box;
+      -moz-box-orient: vertical;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      width: 561px; }
+      /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+      section.leftwards.nav div.left {
+        *display: inline; }
+      /* line 324, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      section.leftwards.nav div.left.wide {
+        width: 880px; }
+    /* line 326, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.leftwards.nav div.right {
+      width: 239px;
+      min-height: 400px;
+      padding: 0 0 0 50px;
+      display: -moz-inline-box;
+      -moz-box-orient: vertical;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      vertical-align: top;
+      background: url('/images/backgrounds/nav_shadow.jpg') no-repeat 0 0; }
+      /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+      section.leftwards.nav div.right {
+        *display: inline; }
+      /* line 334, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      section.leftwards.nav div.right nav {
+        float: left;
+        display: block;
+        margin: 0; }
+        /* line 339, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+        section.leftwards.nav div.right nav a {
+          display: block;
+          padding: 10px;
+          margin: 0;
+          border-bottom: 1px solid #E5E5E5;
+          font-weight: bold; }
+          /* line 345, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+          section.leftwards.nav div.right nav a:last-child {
+            border: none; }
+          /* line 346, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+          section.leftwards.nav div.right nav a.selected {
+            color: #666666; }
+      /* line 350, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      section.leftwards.nav div.right.fixed {
+        position: fixed;
+        top: 0;
+        margin: 0 0 0 30px; }
+        /* line 352, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+        section.leftwards.nav div.right.fixed.extra-margin {
+          margin-top: 40px; }
+  /* line 364, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.rightwards div.right {
+    width: 599px; }
+  /* line 365, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.rightwards div.left {
+    width: 241px; }
+  /* line 369, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.black {
+    border-color: #2F2F2F\9 !important;
+    background: #2F2F2F;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2f2f2f), color-stop(100%, #1a1a1a));
+    background: -webkit-linear-gradient(#2f2f2f, #1a1a1a);
+    background: -moz-linear-gradient(#2f2f2f, #1a1a1a);
+    background: -o-linear-gradient(#2f2f2f, #1a1a1a);
+    background: -ms-linear-gradient(#2f2f2f, #1a1a1a);
+    background: linear-gradient(#2f2f2f, #1a1a1a); }
+    /* line 374, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.black.carto {
+      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #2f2f2f), color-stop(100%, #1a1a1a));
+      background: -webkit-linear-gradient(#2f2f2f, #1a1a1a);
+      background: -moz-linear-gradient(#2f2f2f, #1a1a1a);
+      background: -o-linear-gradient(#2f2f2f, #1a1a1a);
+      background: -ms-linear-gradient(#2f2f2f, #1a1a1a);
+      background: linear-gradient(#2f2f2f, #1a1a1a); }
+  /* line 380, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.blue {
+    background: url('/images/backgrounds/grey-carto.png') repeat 0 0 #377cb9;
+    background: url('/images/backgrounds/grey-carto.png') repeat 0 0, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5c9ddb), color-stop(100%, #3868ae)) 0 0;
+    background: url('/images/backgrounds/grey-carto.png') repeat 0 0, -webkit-linear-gradient(#5c9ddb, #3868ae) 0 0;
+    background: url('/images/backgrounds/grey-carto.png') repeat 0 0, -moz-linear-gradient(#5c9ddb, #3868ae) 0 0;
+    background: url('/images/backgrounds/grey-carto.png') repeat 0 0, -o-linear-gradient(#5c9ddb, #3868ae) 0 0;
+    background: url('/images/backgrounds/grey-carto.png') repeat 0 0, -ms-linear-gradient(#5c9ddb, #3868ae) 0 0;
+    background: url('/images/backgrounds/grey-carto.png') repeat 0 0, linear-gradient(#5c9ddb, #3868ae) 0 0; }
+  /* line 386, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.grey {
+    background: url('/images/backgrounds/grey-carto.png') repeat 0 0 #f9f9f9;
+    background: url('/images/backgrounds/grey-carto.png') repeat 0 0, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #ededed)) 0 0;
+    background: url('/images/backgrounds/grey-carto.png') repeat 0 0, -webkit-linear-gradient(#f9f9f9, #ededed) 0 0;
+    background: url('/images/backgrounds/grey-carto.png') repeat 0 0, -moz-linear-gradient(#f9f9f9, #ededed) 0 0;
+    background: url('/images/backgrounds/grey-carto.png') repeat 0 0, -o-linear-gradient(#f9f9f9, #ededed) 0 0;
+    background: url('/images/backgrounds/grey-carto.png') repeat 0 0, -ms-linear-gradient(#f9f9f9, #ededed) 0 0;
+    background: url('/images/backgrounds/grey-carto.png') repeat 0 0, linear-gradient(#f9f9f9, #ededed) 0 0; }
+  /* line 392, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.shadow {
+    border: 1px solid #E7E7E7\9;
+    -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1); }
+    /* line 396, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.shadow.top {
+      -webkit-box-shadow: 0 -1px 3px 3px rgba(0, 0, 0, 0.06);
+      -moz-box-shadow: 0 -1px 3px 3px rgba(0, 0, 0, 0.06);
+      box-shadow: 0 -1px 3px 3px rgba(0, 0, 0, 0.06); }
+    /* line 397, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.shadow.bottom {
+      -webkit-box-shadow: 0 1px 3px 3px rgba(0, 0, 0, 0.06);
+      -moz-box-shadow: 0 1px 3px 3px rgba(0, 0, 0, 0.06);
+      box-shadow: 0 1px 3px 3px rgba(0, 0, 0, 0.06); }
+  /* line 400, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.no-border {
+    border: 0\9; }
+  /* line 405, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.top {
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -ms-border-bottom-left-radius: 0px;
+    -o-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -ms-border-bottom-right-radius: 0px;
+    -o-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom: none\9; }
+  /* line 411, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.bottom {
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    -ms-border-top-left-radius: 0px;
+    -o-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -ms-border-top-right-radius: 0px;
+    -o-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top: none\9; }
+  /* line 417, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.border {
+    border-top: 1px solid rgba(0, 0, 0, 0.15); }
+  /* line 420, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.ny {
+    background: url('/images/backgrounds/ny.png') repeat 0 0 white; }
+  /* line 421, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.carbon {
+    background: url('/images/backgrounds/carbon.jpg') repeat 0 0 white; }
+  /* line 422, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.wsj {
+    background: url('/images/backgrounds/wsj.png') repeat 0 0; }
+  /* line 423, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.ny1940 {
+    background: url('/images/backgrounds/ny1940.png') repeat 0 0; }
+  /* line 426, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section div.med {
+    width: 62%; }
+  /* line 429, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section span.separate {
+    display: block;
+    height: 1px;
+    margin: 40px 0;
+    background: #E5E5E5; }
+  /* line 437, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section a.back {
+    position: absolute;
+    top: -23px;
+    right: -25px;
+    width: 46px;
+    height: 46px;
+    z-index: 10;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    text-transform: uppercase;
+    background-position: 0 -2172px; }
+    /* line 446, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section a.back:hover {
+      background-position: 0 -2218px; }
+  /* line 451, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section a.previous, section a.next {
+    position: absolute;
+    top: 50%;
+    margin-top: -23px;
+    width: 46px;
+    height: 46px;
+    z-index: 10;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    text-transform: uppercase; }
+  /* line 461, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section a.previous {
+    left: -23px;
+    background-position: 0 -537px; }
+    /* line 464, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section a.previous:hover {
+      background-position: 0 -591px; }
+  /* line 469, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section a.next {
+    right: -23px;
+    background-position: -54px -537px; }
+    /* line 472, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section a.next:hover {
+      background-position: -54px -591px; }
+
+/* LISTS */
+/* line 482, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+ul {
+  letter-spacing: -4px;
+  /* horizontal */
+  /* vertical */
+  /* logos list */
+  /* features list */ }
+  /* line 485, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  ul li {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    vertical-align: middle;
+    letter-spacing: 0px; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    ul li {
+      *display: inline; }
+  /* line 492, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  ul.hz {
+    width: 100%;
+    font-size: 0; }
+    /* line 496, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    ul.hz li {
+      width: 242px;
+      padding: 40px;
+      margin: 0;
+      vertical-align: top; }
+      /* line 501, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      ul.hz li:last-child {
+        width: 235px; }
+      /* line 503, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      ul.hz li h3 {
+        line-height: 1.2;
+        font-size: 23px; }
+  /* line 511, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  ul.vt {
+    width: 100%; }
+    /* line 513, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    ul.vt li {
+      width: 100%;
+      padding: 11px 0;
+      border-bottom: 1px solid #E5E5E5; }
+      /* line 517, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      ul.vt li:last-child {
+        border-bottom: none; }
+  /* line 525, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  ul.logos li {
+    width: auto;
+    margin: 0 0 0 25px; }
+    /* line 525, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    ul.logos li:first-child {
+      margin: 0; }
+  /* line 531, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  ul.features li {
+    width: 235px;
+    padding: 40px 47px 40px 40px;
+    background-position: 100% -2847px; }
+    /* line 536, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    ul.features li:last-child {
+      width: 235px;
+      padding: 40px;
+      background: none; }
+
+/* SESSIONS FORM */
+/* line 545, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+section.sessions form {
+  /* Errors */ }
+  /* line 546, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions form div.field {
+    position: relative;
+    display: inline-block;
+    width: 100%; }
+    /* line 551, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.sessions form div.field.short {
+      width: 342px;
+      margin-left: 25px;
+      margin-right: 25px;
+      padding: 12px 0 0 5px; }
+    /* line 558, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.sessions form div.field.border {
+      border-top: 1px solid #E5E5E5; }
+  /* line 563, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions form p {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    section.sessions form p {
+      *display: inline; }
+  /* line 565, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions form span.domain {
+    position: absolute;
+    right: 12px;
+    top: 1px;
+    padding: 13px 0;
+    height: auto;
+    margin: 0;
+    font: italic 15px "Helvetica Neue",Arial;
+    color: #CCCCCC;
+    line-height: normal;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  /* line 578, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions form label.placeholder {
+    position: absolute;
+    left: 16px;
+    font: normal 15px/46px "Helvetica Neue", "Helvetica", Arial;
+    color: #CCCCCC;
+    z-index: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    /* line 585, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.sessions form label.placeholder:hover {
+      cursor: text; }
+  /* line 588, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions form input::-ms-clear {
+    display: none; }
+  /* line 594, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions form input[type="text"],
+  section.sessions form input[type="password"],
+  section.sessions form input[type="email"] {
+    width: 280px;
+    height: auto;
+    padding: 13px 15px 14px;
+    margin: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    background: none;
+    border: 1px solid #CCCCCC;
+    font: normal 15px "Helvetica Neue","Helvetica",Arial;
+    color: #333333;
+    z-index: 10;
+    line-height: normal; }
+    /* line 607, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.sessions form input[type="text"]:focus,
+    section.sessions form input[type="password"]:focus,
+    section.sessions form input[type="email"]:focus {
+      outline: none;
+      border-color: #999999;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 2px;
+      -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 2px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0 0 2px 2px; }
+    /* line 613, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.sessions form input[type="text"].error,
+    section.sessions form input[type="password"].error,
+    section.sessions form input[type="email"].error {
+      width: 255px;
+      padding-right: 40px;
+      border-color: #F08A84;
+      color: #E95850; }
+      /* line 619, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      section.sessions form input[type="text"].error:focus,
+      section.sessions form input[type="password"].error:focus,
+      section.sessions form input[type="email"].error:focus {
+        border-color: #D17671; }
+  /* line 625, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions form input[type="checkbox"] {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    vertical-align: top;
+    margin: 1px 6px 0 3px; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    section.sessions form input[type="checkbox"] {
+      *display: inline; }
+  /* line 631, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions form a.checkbox {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    vertical-align: middle;
+    width: 12px;
+    height: 12px;
+    margin: 1px 1px 0 3px;
+    background-position: 0 -2456px; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    section.sessions form a.checkbox {
+      *display: inline; }
+    /* line 638, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.sessions form a.checkbox:hover {
+      background-position: 0 -2494px; }
+    /* line 642, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.sessions form a.checkbox.error {
+      background-position: 0 -2532px; }
+    /* line 646, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.sessions form a.checkbox.checked {
+      background-position: 0 -2475px; }
+      /* line 648, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      section.sessions form a.checkbox.checked:hover {
+        background-position: 0 -2513px; }
+  /* line 654, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions form div.field_with_errors {
+    width: auto;
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    vertical-align: top; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    section.sessions form div.field_with_errors {
+      *display: inline; }
+    /* line 661, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.sessions form div.field_with_errors input[type="text"],
+    section.sessions form div.field_with_errors input[type="password"],
+    section.sessions form div.field_with_errors input[type="email"] {
+      width: 255px;
+      padding-right: 40px;
+      border-color: #F08A84;
+      color: #E95850; }
+      /* line 667, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      section.sessions form div.field_with_errors input[type="text"]:focus,
+      section.sessions form div.field_with_errors input[type="password"]:focus,
+      section.sessions form div.field_with_errors input[type="email"]:focus {
+        border-color: #D17671; }
+  /* line 673, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions form div.field_error {
+    position: absolute;
+    right: 9px;
+    top: 10px;
+    width: 26px;
+    height: 27px;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    text-transform: uppercase;
+    background-position: 0 -2550px;
+    z-index: 5; }
+    /* line 682, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.sessions form div.field_error:hover {
+      cursor: pointer; }
+/* line 687, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+section.sessions.large {
+  width: 532px; }
+  /* line 690, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions.large .content {
+    text-align: center; }
+  /* line 694, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions.large .desc {
+    width: 382px;
+    margin: 15px auto 0; }
+  /* line 702, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions.large form input[type="text"],
+  section.sessions.large form input[type="password"],
+  section.sessions.large form input[type="email"] {
+    width: 420px; }
+    /* line 705, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.sessions.large form input[type="text"].domain,
+    section.sessions.large form input[type="password"].domain,
+    section.sessions.large form input[type="email"].domain {
+      padding-right: 105px;
+      width: 330px;
+      text-align: right; }
+  /* line 711, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions.large form input[type="submit"], section.sessions.large form button[type="submit"] {
+    width: 450px; }
+  /* line 719, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions.large div.field_with_errors input[type="text"],
+  section.sessions.large div.field_with_errors input[type="password"],
+  section.sessions.large div.field_with_errors input[type="email"] {
+    width: 395px; }
+    /* line 721, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    section.sessions.large div.field_with_errors input[type="text"].domain,
+    section.sessions.large div.field_with_errors input[type="password"].domain,
+    section.sessions.large div.field_with_errors input[type="email"].domain {
+      padding-right: 135px;
+      width: 300px; }
+/* line 730, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+section.sessions.longer {
+  width: 562px; }
+  /* line 733, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  section.sessions.longer img.alone {
+    margin: 50px 0 0 125px; }
+
+/* FOOTER */
+/* line 740, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+footer {
+  width: 100%;
+  min-width: 960px;
+  height: 158px;
+  padding: 38px 0 40px;
+  border-top: 1px solid #E5E5E5;
+  background: white; }
+  /* line 748, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  footer div.wrap {
+    overflow: visible; }
+  /* line 749, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  footer span.cartodb {
+    position: absolute;
+    top: -112px;
+    left: -10px;
+    width: 84px;
+    height: 105px;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    text-transform: uppercase;
+    z-index: 10;
+    background-position: 0 -5301px; }
+  /* line 761, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  footer nav ul.right {
+    padding: 0 0 0 277px;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0 0 20px 0;
+    height: 140px;
+    width: 605px; }
+  /* line 769, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  footer nav ul li.column {
+    display: inline-block;
+    width: 119px;
+    margin: 0 0 0 48px;
+    height: 100%;
+    float: left; }
+    /* line 776, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    footer nav ul li.column.separate-more {
+      margin-right: 35px; }
+    /* line 777, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    footer nav ul li.column.short {
+      width: 70px; }
+    /* line 779, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    footer nav ul li.column ul li {
+      margin: 0 0 6px 0;
+      display: block; }
+      /* line 782, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      footer nav ul li.column ul li.group-title {
+        font-family: Helvetica, Arial, Sans-serif;
+        color: #666;
+        font-size: 13px;
+        font-weight: bold; }
+      /* line 788, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+      footer nav ul li.column ul li a {
+        margin: 0; }
+  /* line 791, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  footer nav div.secondary-links {
+    width: 880px;
+    padding: 20px 0 50px 0; }
+    /* line 794, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    footer nav div.secondary-links .right {
+      width: 580px; }
+  /* line 800, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+  footer.short {
+    min-width: 124px;
+    width: 124px;
+    height: 42px;
+    margin: 0 auto 30px;
+    padding: 0 0 40px;
+    background: none;
+    border: none; }
+    /* line 808, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+    footer.short a.cartodb {
+      display: block;
+      width: 124px;
+      height: 42px;
+      text-indent: -9999px;
+      font-size: 0;
+      line-height: 0;
+      text-transform: uppercase;
+      background-position: 0 -5906px; }
+
+/* line 814, ../../../../app/assets/stylesheets/front/common/style.css.scss */
+.tipsy {
+  font-size: 13px;
+  font-family: "Helvetica",Arial; }
+
+/* line 4, ../../../../app/assets/stylesheets/front/common/ie.css.scss */
+html.lt-ie9 body.front header h1,
+html.lt-ie9 body.developers header h1 {
+  float: left; }
+/* line 8, ../../../../app/assets/stylesheets/front/common/ie.css.scss */
+html.lt-ie9 h2.compact {
+  line-height: 42px; }
+/* line 12, ../../../../app/assets/stylesheets/front/common/ie.css.scss */
+html.lt-ie9 div.background.light {
+  position: relative;
+  background: none;
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#19FFFFFF,endColorstr=#19FFFFFF);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#19FFFFFF,endColorstr=#19FFFFFF);
+  zoom: 1;
+  border-bottom: 1px solid #42759d;
+  overflow: visible; }
+  /* line 21, ../../../../app/assets/stylesheets/front/common/ie.css.scss */
+  html.lt-ie9 div.background.light header {
+    margin-top: 0;
+    padding-top: 25px; }
+/* line 27, ../../../../app/assets/stylesheets/front/common/ie.css.scss */
+html.lt-ie9 .subheader {
+  display: block;
+  position: absolute;
+  height: 117px;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  background: url('/images/backgrounds/header_bkg.png') repeat-x; }
+/* line 39, ../../../../app/assets/stylesheets/front/common/ie.css.scss */
+html.lt-ie9 body.case_studies .intro,
+html.lt-ie9 body.index .intro {
+  padding-top: 50px; }
+/* line 47, ../../../../app/assets/stylesheets/front/common/ie.css.scss */
+html.lt-ie9 body.visualize #menu a,
+html.lt-ie9 body.analyze #menu a,
+html.lt-ie9 body.develop #menu a {
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#19397DB9,endColorstr=#19397DB9)";
+  /* IE8 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#19397DB9,endColorstr=#19397DB9);
+  /* IE7 */
+  zoom: 1; }
+  /* line 54, ../../../../app/assets/stylesheets/front/common/ie.css.scss */
+  html.lt-ie9 body.visualize #menu a:hover, html.lt-ie9 body.visualize #menu a.selected,
+  html.lt-ie9 body.analyze #menu a:hover,
+  html.lt-ie9 body.analyze #menu a.selected,
+  html.lt-ie9 body.develop #menu a:hover,
+  html.lt-ie9 body.develop #menu a.selected {
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#19000000,endColorstr=#19000000)";
+    /* IE8 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#19000000,endColorstr=#19000000);
+    /* IE7 */ }
+/* line 61, ../../../../app/assets/stylesheets/front/common/ie.css.scss */
+html.lt-ie9 body.visualize .css.col1,
+html.lt-ie9 body.analyze .css.col1,
+html.lt-ie9 body.develop .css.col1 {
+  margin-top: 45px; }
+/* line 65, ../../../../app/assets/stylesheets/front/common/ie.css.scss */
+html.lt-ie9 body.visualize .css.col2,
+html.lt-ie9 body.analyze .css.col2,
+html.lt-ie9 body.develop .css.col2 {
+  margin-top: 55px; }
+/* line 69, ../../../../app/assets/stylesheets/front/common/ie.css.scss */
+html.lt-ie9 body.visualize .css.col3,
+html.lt-ie9 body.analyze .css.col3,
+html.lt-ie9 body.develop .css.col3 {
+  margin-top: 35px; }
+/* line 73, ../../../../app/assets/stylesheets/front/common/ie.css.scss */
+html.lt-ie9 body.visualize .css.col4,
+html.lt-ie9 body.analyze .css.col4,
+html.lt-ie9 body.develop .css.col4 {
+  margin-top: 55px; }
+
+/* line 1, ../../../../app/assets/stylesheets/front/common/theme.css.scss */
+pre {
+  background: #FFF;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  margin: 20px 0 0 0;
+  padding: 0px;
+  color: #333;
+  font-size: 12px;
+  line-height: 16px; }
+
+/* line 15, ../../../../app/assets/stylesheets/front/common/theme.css.scss */
+pre, code {
+  font-family: 'Monaco', 'Consolas', monospace; }
+
+/* line 19, ../../../../app/assets/stylesheets/front/common/theme.css.scss */
+pre .comment {
+  color: #7E7E7E;
+  font-style: italic; }
+
+/* line 24, ../../../../app/assets/stylesheets/front/common/theme.css.scss */
+pre .constant, pre .integer {
+  color: #18838A;
+  font-weight: bold; }
+
+/* line 29, ../../../../app/assets/stylesheets/front/common/theme.css.scss */
+pre .storage {
+  color: #0000A1; }
+
+/* line 33, ../../../../app/assets/stylesheets/front/common/theme.css.scss */
+pre .string {
+  color: #8E0022; }
+
+/* line 37, ../../../../app/assets/stylesheets/front/common/theme.css.scss */
+pre .keyword, pre .selector {
+  color: #0066FF;
+  font-weight: bold; }
+
+/* line 42, ../../../../app/assets/stylesheets/front/common/theme.css.scss */
+pre .parent {
+  font-style: italic; }
+
+/* line 46, ../../../../app/assets/stylesheets/front/common/theme.css.scss */
+pre .entity, pre .meta {
+  color: #3E853F; }
+
+/* line 50, ../../../../app/assets/stylesheets/front/common/theme.css.scss */
+pre .support {
+  color: #192140; }
+
+/* Developers home */
+/* line 15, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.index ul.features li {
+  height: 100%;
+  background-position: 100% -2814px; }
+  /* line 18, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.index ul.features li:last-child {
+    background: none; }
+/* line 24, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.index section.templates h3 {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  margin-top: 50px;
+  font-size: 35px;
+  line-height: 40px\9; }
+  /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+  body.developers.index section.templates h3 {
+    *display: inline; }
+/* line 31, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.index section.templates h4 {
+  margin-top: 0;
+  font: bold 23px "Segoe UI Bold", "Helvetica Bold", "Helvetica", Arial;
+  color: #333333;
+  letter-spacing: -1px;
+  line-height: 24px;
+  line-height: normal\9; }
+/* line 40, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.index section.templates ul {
+  margin-top: 40px; }
+  /* line 43, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.index section.templates ul li {
+    width: 242px;
+    padding: 126px 40px 40px 40px;
+    margin: 0;
+    vertical-align: top; }
+    /* line 49, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.index section.templates ul li a.button {
+      padding: 10px 18px;
+      font-size: 17px; }
+    /* line 54, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.index section.templates ul li a.underline {
+      text-decoration: underline!important; }
+    /* line 56, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.index section.templates ul li:last-child {
+      width: 236px;
+      border: none; }
+    /* line 58, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.index section.templates ul li.template_editorial {
+      background: url('/images/layout/template_editorial.jpg') no-repeat -88px 10px; }
+    /* line 59, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.index section.templates ul li.template_sidepanel {
+      background: url('/images/layout/template_sidepanel.jpg') no-repeat -86px 10px; }
+    /* line 60, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.index section.templates ul li.template_double {
+      background: url('/images/layout/template_double.jpg') no-repeat -92px 0; }
+    /* line 61, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.index section.templates ul li.template_coming_soon {
+      background: url('/images/layout/template_coming_soon.jpg') no-repeat -92px 0; }
+
+/* Form for examples */
+/* line 71, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.examples form {
+  position: relative;
+  width: 600px;
+  margin: 40px auto 0;
+  letter-spacing: -4px;
+  font-size: 0; }
+  /* line 78, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.examples form input[type="text"] {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    width: 460px;
+    padding: 15px 14px 14px;
+    height: 18px;
+    margin: 0;
+    font: normal 15px "Helvetica",Arial;
+    color: #333333;
+    border: 1px solid black;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -ms-border-top-left-radius: 3px;
+    -o-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -ms-border-bottom-left-radius: 3px;
+    -o-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    letter-spacing: 0; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    body.developers.examples form input[type="text"] {
+      *display: inline; }
+    /* line 89, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.examples form input[type="text"]:focus {
+      outline: none; }
+  /* line 91, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.examples form input[type="submit"] {
+    width: 100px;
+    margin: 0;
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 49px;
+    letter-spacing: -1px;
+    border: 1px solid black;
+    border-left: 0;
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    -ms-border-top-left-radius: 0px;
+    -o-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -ms-border-bottom-left-radius: 0px;
+    -o-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    body.developers.examples form input[type="submit"] {
+      *display: inline; }
+    /* line 102, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.examples form input[type="submit"]:hover {
+      cursor: pointer; }
+  /* line 104, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.examples form label {
+    position: absolute;
+    top: 17px;
+    left: 16px;
+    font: normal 15px "Helvetica Neue","Helvetica",Arial;
+    color: #CCCCCC;
+    z-index: 0;
+    letter-spacing: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+    /* line 113, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.examples form label:hover {
+      cursor: text; }
+
+/* line 119, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.examples .download {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  float: right;
+  padding-right: 20px; }
+
+/* Custom css for documentation */
+/* line 124, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation section.leftwards {
+  /* images */
+  /* elements */
+  /* request - result */ }
+  /* line 125, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards .right {
+    padding: 90px 30px 30px;
+    margin: -40px;
+    border-left: 1px solid #E5E5E5;
+    background: #F8F8F8; }
+  /* line 132, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards .blocks {
+    overflow: hidden;
+    margin-top: 30px;
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5; }
+    /* line 138, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.documentation section.leftwards .blocks li {
+      float: left;
+      width: 245px;
+      padding: 30px 35px 30px 0;
+      margin: 0;
+      background: transparent; }
+      /* line 145, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.documentation section.leftwards .blocks li + li {
+        border-left: 1px solid #E5E5E5;
+        padding: 30px 0 30px 35px; }
+    /* line 151, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.documentation section.leftwards .blocks h3 {
+      font-size: 19px;
+      margin-bottom: 20px; }
+      /* line 155, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.documentation section.leftwards .blocks h3 a {
+        text-decoration: none; }
+  /* line 160, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards img {
+    margin: 15px 0;
+    width: 561px; }
+  /* line 163, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards em {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    vertical-align: middle;
+    height: 19px;
+    padding: 4px 6px;
+    margin: 3px 5px 0 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    font: bold 13px "Segoe UI Bold", "Helvetica Bold", Arial;
+    line-height: 16px;
+    color: white;
+    background: #E5E5E5;
+    text-transform: uppercase; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    body.developers.documentation section.leftwards em {
+      *display: inline; }
+  /* line 177, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards h5 {
+    margin: 30px 0 0 0; }
+    /* line 177, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.documentation section.leftwards h5.first {
+      margin: 20px 0 0 0; }
+  /* line 178, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards h6 {
+    font: bold 12px "Segoe UI Bold","Helvetica Bold", Arial; }
+  /* line 179, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards p {
+    margin: 15px 0 0 0;
+    color: #666666; }
+    /* line 182, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.documentation section.leftwards p.light {
+      color: #999999; }
+    /* line 183, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.documentation section.leftwards p.margin30 {
+      margin-top: 30px; }
+  /* line 185, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards strong {
+    font-weight: bold; }
+  /* line 186, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards ul {
+    margin: 10px 0 0 0; }
+    /* line 188, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.documentation section.leftwards ul li {
+      background: url('/images/central_icons/list_grey.jpg') no-repeat 0 7px;
+      margin: 10px 0 0 0;
+      padding: 0 0 0 10px;
+      display: list-item; }
+      /* line 193, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.documentation section.leftwards ul li p {
+        display: inline; }
+      /* line 196, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.documentation section.leftwards ul li .CodeMirror,
+      body.developers.documentation section.leftwards ul li .code_title {
+        margin-left: -60px; }
+  /* line 199, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards table {
+    margin: 20px 0 0 0;
+    width: 100%;
+    font: normal 13px "Helvetica", "Arial";
+    color: #999999; }
+    /* line 204, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.documentation section.leftwards table tr {
+      width: 100%; }
+      /* line 206, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.documentation section.leftwards table tr td {
+        padding: 14px; }
+        /* line 208, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+        body.developers.documentation section.leftwards table tr td:first-child {
+          font-weight: bold;
+          color: #666666; }
+        /* line 209, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+        body.developers.documentation section.leftwards table tr td:last-child {
+          border-left: 1px solid #E5E5E5; }
+      /* line 211, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.documentation section.leftwards table tr:nth-child(odd) {
+        background: #F2F2F2; }
+  /* line 215, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards div.indent {
+    display: block;
+    padding-left: 20px; }
+  /* line 221, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards dl {
+    display: block;
+    margin: 10px 0 0 0;
+    padding: 0 0 6px 0;
+    letter-spacing: -4px;
+    font-size: 0; }
+    /* line 228, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.documentation section.leftwards dl dt, body.developers.documentation section.leftwards dl dd {
+      display: -moz-inline-box;
+      -moz-box-orient: vertical;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      letter-spacing: 0;
+      vertical-align: top; }
+      /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+      body.developers.documentation section.leftwards dl dt, body.developers.documentation section.leftwards dl dd {
+        *display: inline; }
+    /* line 229, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.documentation section.leftwards dl dt {
+      width: 60px;
+      margin: 10px 10px 0 0;
+      font: bold 12px "Segoe UI Bold","Helvetica Bold", Arial;
+      color: #333333;
+      text-transform: uppercase; }
+      /* line 235, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.documentation section.leftwards dl dt.long {
+        width: 80px; }
+    /* line 240, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.documentation section.leftwards dl dd {
+      width: 480px;
+      margin: 10px 0 10px 0;
+      padding: 0; }
+      /* line 244, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.documentation section.leftwards dl dd pre {
+        margin: 0;
+        padding: 0;
+        font: normal 13px "Monaco","Courier New";
+        color: #999999; }
+      /* line 245, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.documentation section.leftwards dl dd.short {
+        width: 460px; }
+  /* line 249, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards .map_wrapper {
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0 -29px 0 -40px; }
+  /* line 255, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards .CodeMirror + .map_wrapper {
+    border-top: 1px solid #484848; }
+  /* line 259, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards .code_title {
+    border-top: 1px solid #484848;
+    margin: 10px -30px 0 -40px;
+    padding-left: 40px;
+    font: normal 13px/50px "Monaco", "Courier New";
+    text-transform: uppercase;
+    background: #333;
+    color: #999; }
+  /* line 270, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards .result_wrapper .code_title {
+    color: #ccc;
+    background: #eee; }
+  /* line 275, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards .result_wrapper .CodeMirror + .map_wrapper {
+    border-top: 1px solid #ccc; }
+  /* line 280, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation section.leftwards div.right ul {
+    display: block;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none!important; }
+    /* line 286, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.documentation section.leftwards div.right ul a {
+      display: inline;
+      width: auto;
+      margin: 5px 0 0;
+      font: normal 15px "Helvetica", "Helvetica Neue",Arial;
+      text-decoration: none; }
+      /* line 292, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.documentation section.leftwards div.right ul a.first {
+        border: none; }
+    /* line 295, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.documentation section.leftwards div.right ul > li {
+      display: block;
+      width: auto;
+      margin: 0;
+      padding: 0;
+      background: none;
+      border: none; }
+      /* line 303, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.documentation section.leftwards div.right ul > li > a {
+        border-top: 1px solid #E5E5E5;
+        display: block;
+        padding: 15px 13px 10px;
+        font-weight: bold; }
+        /* line 308, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+        body.developers.documentation section.leftwards div.right ul > li > a.selected {
+          border: none;
+          padding: 10px 13px;
+          -webkit-border-radius: 2px;
+          -moz-border-radius: 2px;
+          -ms-border-radius: 2px;
+          -o-border-radius: 2px;
+          border-radius: 2px;
+          background: #D4E5F5;
+          color: #333333; }
+      /* line 317, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.documentation section.leftwards div.right ul > li ul {
+        margin: 0 0 0 15px; }
+        /* line 319, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+        body.developers.documentation section.leftwards div.right ul > li ul li {
+          display: block;
+          padding: 8px 0 6px 0px;
+          border: none; }
+          /* line 324, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+          body.developers.documentation section.leftwards div.right ul > li ul li a {
+            border: none;
+            margin: 0;
+            padding: 0 0 0 10px;
+            font-weight: normal;
+            background: url('/images/central_icons/list.jpg') no-repeat 1px 6px; }
+            /* line 330, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+            body.developers.documentation section.leftwards div.right ul > li ul li a.selected {
+              padding: 0 0 0 10px;
+              background: url('/images/central_icons/list_grey.jpg') no-repeat 1px 6px; }
+          /* line 336, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+          body.developers.documentation section.leftwards div.right ul > li ul li ul {
+            display: none;
+            margin-top: 7px; }
+            /* line 340, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+            body.developers.documentation section.leftwards div.right ul > li ul li ul li {
+              padding: 4px 0; }
+          /* line 345, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+          body.developers.documentation section.leftwards div.right ul > li ul li.selected ul {
+            display: block; }
+    /* line 350, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.documentation section.leftwards div.right ul.vt > li > ul {
+      margin-left: 0; }
+/* line 356, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_using-cartodb section.leftwards .map_wrapper {
+  margin: 0 -59px 0 -40px; }
+/* line 365, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_cartodb-js section, body.developers.documentation.documentation_v2_cartodb-js section, body.developers.documentation.documentation_v3_cartodb-js section {
+  width: 990px; }
+/* line 367, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_cartodb-js section.leftwards .left, body.developers.documentation.documentation_v2_cartodb-js section.leftwards .left, body.developers.documentation.documentation_v3_cartodb-js section.leftwards .left {
+  width: 621px; }
+/* line 372, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_cartodb-js #documentation h2, body.developers.documentation.documentation_v2_cartodb-js #documentation h2, body.developers.documentation.documentation_v3_cartodb-js #documentation h2 {
+  margin-top: 10px;
+  color: #333333;
+  text-shadow: none; }
+/* line 378, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_cartodb-js #documentation h3, body.developers.documentation.documentation_v2_cartodb-js #documentation h3, body.developers.documentation.documentation_v3_cartodb-js #documentation h3 {
+  font-size: 28px;
+  margin-bottom: 20px; }
+/* line 383, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_cartodb-js #documentation h4, body.developers.documentation.documentation_v2_cartodb-js #documentation h4, body.developers.documentation.documentation_v3_cartodb-js #documentation h4 {
+  margin-top: 20px;
+  font-size: 28px;
+  letter-spacing: -1px; }
+/* line 389, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_cartodb-js #documentation h5, body.developers.documentation.documentation_v2_cartodb-js #documentation h5, body.developers.documentation.documentation_v3_cartodb-js #documentation h5 {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 28px; }
+  /* line 393, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation.documentation_cartodb-js #documentation h5 small, body.developers.documentation.documentation_v2_cartodb-js #documentation h5 small, body.developers.documentation.documentation_v3_cartodb-js #documentation h5 small {
+    margin-left: 5px;
+    color: #FF7F00;
+    font-family: "Myriad Pro", Helvetica, Arial;
+    font-style: italic; }
+/* line 401, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_cartodb-js #documentation h6, body.developers.documentation.documentation_v2_cartodb-js #documentation h6, body.developers.documentation.documentation_v3_cartodb-js #documentation h6 {
+  margin-top: 20px;
+  text-transform: uppercase; }
+/* line 406, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_cartodb-js #documentation div.left li, body.developers.documentation.documentation_v2_cartodb-js #documentation div.left li, body.developers.documentation.documentation_v3_cartodb-js #documentation div.left li {
+  margin-top: 15px;
+  font: normal 15px "Helvetica Neue", "Helvetica", Arial;
+  color: #666666;
+  background-position: 0 7px; }
+/* line 416, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .CodeMirror {
+  margin: 10px 0 0 0;
+  background: transparent;
+  color: #000;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #E5E5E5;
+  /* Necessary so the scrollbar can be absolutely positioned within the wrapper on Lion. */
+  position: relative;
+  /* This prevents unwanted scrollbars from showing up on the body and wrapper in IE. */
+  overflow: hidden; }
+  /* line 428, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation.documentation_v2_cartodb-js .CodeMirror .copy {
+    display: none;
+    padding: 10px 10px 3px 10px; }
+  /* line 433, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation.documentation_v2_cartodb-js .CodeMirror:hover .copy {
+    display: block; }
+  /* line 435, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.documentation.documentation_v2_cartodb-js .CodeMirror .select, body.developers.documentation.documentation_v2_cartodb-js .CodeMirror .copy {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    background-color: #F3F8FB;
+    -webkit-border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -ms-border-radius: 4px 0 4px 0;
+    -o-border-radius: 4px 0 4px 0;
+    border-radius: 4px 0 4px 0; }
+    /* line 445, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.documentation.documentation_v2_cartodb-js .CodeMirror .select a, body.developers.documentation.documentation_v2_cartodb-js .CodeMirror .copy a {
+      font-size: 14px; }
+    /* line 446, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.documentation.documentation_v2_cartodb-js .CodeMirror .select a:hover, body.developers.documentation.documentation_v2_cartodb-js .CodeMirror .copy a:hover {
+      color: #27527; }
+/* line 450, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .CodeMirror-lines {
+  padding: .5em;
+  white-space: pre;
+  cursor: text;
+  margin-left: 7px; }
+/* line 457, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-keyword {
+  color: #708; }
+/* line 458, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-atom {
+  color: #219; }
+/* line 459, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-number {
+  color: #164; }
+/* line 460, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-def {
+  color: #00f; }
+/* line 461, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-variable {
+  color: #666666; }
+/* line 462, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-variable-2 {
+  color: #05a; }
+/* line 463, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-variable-3 {
+  color: #085; }
+/* line 464, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-property {
+  color: #666666; }
+/* line 465, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-operator {
+  color: #666666; }
+/* line 466, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-comment {
+  color: #a50; }
+/* line 467, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-string {
+  color: #a11; }
+/* line 468, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-string-2 {
+  color: #f50; }
+/* line 469, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-meta {
+  color: #555; }
+/* line 470, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-error {
+  color: #f00; }
+/* line 471, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-qualifier {
+  color: #555; }
+/* line 472, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-builtin {
+  color: #30a; }
+/* line 473, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-bracket {
+  color: #997; }
+/* line 474, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-tag {
+  color: #170; }
+/* line 475, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-attribute {
+  color: #00c; }
+/* line 476, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-header {
+  color: blue; }
+/* line 477, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-quote {
+  color: #090; }
+/* line 478, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-hr {
+  color: #999; }
+/* line 479, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_v2_cartodb-js .cm-s-default span.cm-link {
+  color: #00c; }
+/* line 486, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_sql-api .CodeMirror,
+body.developers.documentation.documentation_sql-api section.leftwards .code_title, body.developers.documentation.documentation_advanced_concepts .CodeMirror, body.developers.documentation.documentation_advanced_concepts section.leftwards .code_title, body.developers.documentation.documentation_using-cartodb .CodeMirror, body.developers.documentation.documentation_using-cartodb section.leftwards .code_title {
+  margin: 0 -59px 0 -40px; }
+/* line 490, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.documentation.documentation_sql-api .CodeMirror + .result_wrapper .result, body.developers.documentation.documentation_advanced_concepts .CodeMirror + .result_wrapper .result, body.developers.documentation.documentation_using-cartodb .CodeMirror + .result_wrapper .result {
+  border-top: 1px solid #484848; }
+
+/* Tutorials show */
+/* line 499, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials h2 {
+  display: block;
+  padding-right: 100px; }
+/* line 501, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials div.center {
+  width: auto; }
+/* line 503, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .tooltip {
+  padding: 7px 8px 4px 6px;
+  background: white;
+  border: 1px solid #999;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 5px #CCC; }
+  /* line 510, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials .tooltip img {
+    border: 1px solid #999;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    padding: 0; }
+  /* line 516, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials .tooltip.reversed .tip {
+    top: -8px;
+    background: url('/images/central_icons/tooltip_tip_up.png') no-repeat; }
+  /* line 521, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials .tooltip .tip {
+    width: 12px;
+    height: 9px;
+    position: absolute;
+    bottom: -8px;
+    margin-left: -6px;
+    left: 50%;
+    background: url('/images/central_icons/tooltip_tip.png') no-repeat; }
+/* line 532, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials div.background.floating {
+  overflow: visible; }
+/* line 536, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .sort {
+  margin: 43px auto 0 auto;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  border: 1px solid #555555;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
+  /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+  body.developers.tutorials .sort {
+    *display: inline; }
+  /* line 543, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials .sort li {
+    width: 100px;
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    body.developers.tutorials .sort li {
+      *display: inline; }
+    /* line 547, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.tutorials .sort li:first-child {
+      border-right: 1px solid #555; }
+    /* line 551, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.tutorials .sort li.selected a, body.developers.tutorials .sort li a:hover {
+      color: #fff;
+      font-weight: 100; }
+    /* line 553, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.tutorials .sort li a {
+      display: block;
+      padding: 6px 5px;
+      font: 100 15px "Helvetica", "Helvetica Neue", Arial;
+      color: #555;
+      text-decoration: none;
+      -webkit-transition: .2s color linear;
+      -moz-transition: .2s color linear;
+      transition: .2s color linear; }
+/* line 571, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section .note {
+  color: #FF0000; }
+/* line 576, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section ul.tutorials_list li {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  position: relative;
+  width: 880px;
+  margin: 40px 40px 0 40px;
+  padding: 0 0 40px 0;
+  border-bottom: 1px solid #E5E5E5;
+  letter-spacing: 0; }
+  /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+  body.developers.tutorials section ul.tutorials_list li {
+    *display: inline; }
+  /* line 585, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section ul.tutorials_list li h3 {
+    margin: 0; }
+  /* line 586, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section ul.tutorials_list li h3 a {
+    color: #333333;
+    text-decoration: none; }
+    /* line 586, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.tutorials section ul.tutorials_list li h3 a:hover {
+      color: black; }
+  /* line 587, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section ul.tutorials_list li p {
+    padding: 15px 0 0 0; }
+  /* line 589, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section ul.tutorials_list li em {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    vertical-align: middle;
+    height: 19px;
+    padding: 4px 6px;
+    margin: 3px 5px 0 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    font: bold 13px "Segoe UI Bold","Helvetica Bold", Arial;
+    line-height: 17px;
+    color: white; }
+    /* line 602, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.tutorials section ul.tutorials_list li em.basic {
+      text-transform: uppercase;
+      background: #93BD41; }
+    /* line 603, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.tutorials section ul.tutorials_list li em.medium {
+      text-transform: uppercase;
+      background: #FFCC66; }
+    /* line 604, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.tutorials section ul.tutorials_list li em.hard {
+      text-transform: uppercase;
+      background: #E95850; }
+    /* line 605, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.tutorials section ul.tutorials_list li em.time_needed {
+      top: 32px;
+      text-transform: uppercase;
+      background: #E5E5E5; }
+/* line 612, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial a {
+  text-decoration: none; }
+/* line 614, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial em {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  position: absolute;
+  right: 30px;
+  top: 45px;
+  vertical-align: middle;
+  height: 19px;
+  padding: 4px 6px;
+  margin: 3px 5px 0 0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  font: bold 13px "Segoe UI Bold","Helvetica Bold", Arial;
+  line-height: 17px;
+  color: white; }
+  /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+  body.developers.tutorials section.tutorial em {
+    *display: inline; }
+  /* line 628, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section.tutorial em.basic {
+    text-transform: uppercase;
+    background: #93BD41; }
+  /* line 629, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section.tutorial em.medium {
+    text-transform: uppercase;
+    background: #FFCC66; }
+  /* line 630, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section.tutorial em.hard {
+    text-transform: uppercase;
+    background: #E95850; }
+  /* line 631, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section.tutorial em.time_needed {
+    top: 35px;
+    text-transform: uppercase;
+    background: #E5E5E5; }
+/* line 634, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial table {
+  width: 100%;
+  margin: 5px 0 15px 0;
+  background-color: #F6F6F6;
+  border: 1px solid #CCC;
+  border-collapse: separate;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  /* line 643, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section.tutorial table tr th {
+    padding: 15px;
+    font: bold 13px "Helvetica", "Helvetica Neue",Arial;
+    color: #7C7C7C;
+    border-bottom: 1px solid #CCC; }
+  /* line 650, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section.tutorial table tr td {
+    padding: 15px;
+    font: normal 14px "Helvetica", "Helvetica Neue",Arial;
+    color: #737373;
+    background-color: #FFFFFF;
+    border-right: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC; }
+    /* line 658, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.tutorials section.tutorial table tr td.last_col {
+      border-right: none; }
+    /* line 662, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.tutorials section.tutorial table tr td.last_row {
+      border-bottom: none;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px; }
+/* line 671, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial .ui_tooltip {
+  padding: 5px;
+  background-color: #FFFFFF;
+  border: 1px solid #CCC; }
+/* line 677, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial iframe {
+  width: 960px;
+  height: 300px;
+  margin: 0;
+  padding: 0; }
+/* line 683, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial .content.tutorial-map {
+  height: 300px;
+  position: relative; }
+  /* line 686, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section.tutorial .content.tutorial-map .separator.top {
+    top: 0; }
+  /* line 687, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section.tutorial .content.tutorial-map .separator.bottom {
+    bottom: 0; }
+  /* line 689, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section.tutorial .content.tutorial-map.tutorial-video {
+    height: 540px; }
+    /* line 692, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.tutorials section.tutorial .content.tutorial-map.tutorial-video iframe {
+      height: 540px; }
+/* line 698, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial p {
+  margin: 15px 0 0 0; }
+/* line 702, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial h3 {
+  margin: 30px 0 0 0; }
+  /* line 704, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section.tutorial h3:first-child {
+    margin-top: 0; }
+/* line 707, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial h5 {
+  margin: 30px 0 0 0;
+  font: bold 19px "Segoe UI Bold","Helvetica Bold", Arial;
+  color: #333;
+  letter-spacing: -1px;
+  line-height: 15px; }
+/* line 715, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial ul {
+  margin: 10px 0 0 0; }
+  /* line 717, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section.tutorial ul li {
+    background: url('/images/central_icons/list_grey.jpg') no-repeat 0 5px;
+    margin: 10px 0 0 0;
+    padding: 0 0 0 10px;
+    display: list-item;
+    color: #333;
+    font: normal 15px "Helvetica", "Helvetica Neue",Arial; }
+    /* line 724, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.tutorials section.tutorial ul li p {
+      display: inline; }
+/* line 729, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial img {
+  margin: 30px 0 10px 0; }
+/* line 734, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial div.CodeMirror {
+  margin: 30px 0; }
+/* line 738, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial code {
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  width: 530px;
+  margin: 15px 0 0 0;
+  background-color: #F6F6F6;
+  border: 1px solid #CCC;
+  padding: 15px;
+  font: normal 13px "Monaco","Courier New";
+  color: #999999;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px; }
+  /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+  body.developers.tutorials section.tutorial code {
+    *display: inline; }
+/* line 749, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial span.ui_element {
+  color: #84B100;
+  text-decoration: none;
+  border-bottom: 1px dotted; }
+/* line 755, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial span.code_variable {
+  font: normal 13px "Monaco","Courier New";
+  color: #999999; }
+/* line 757, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial span.separator {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  background: #E9E9E9\9; }
+  /* line 759, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section.tutorial span.separator.dark {
+    background: rgba(0, 0, 0, 0.2); }
+  /* line 760, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section.tutorial span.separator.top {
+    top: 0; }
+/* line 765, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial div.tutorial_menu ul {
+  display: block;
+  width: auto;
+  margin: 10px 0 0 0;
+  padding: 0; }
+  /* line 771, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials section.tutorial div.tutorial_menu ul li {
+    display: list-item; }
+    /* line 774, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.tutorials section.tutorial div.tutorial_menu ul li a {
+      display: inline;
+      width: auto;
+      margin: 0 0;
+      font: normal 15px "Helvetica", "Helvetica Neue",Arial;
+      text-decoration: none; }
+/* line 784, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials section.tutorial div.tutorial_menu.fixed {
+  margin-top: 30px; }
+/* line 791, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .CodeMirror {
+  margin: 10px 0 0 0;
+  background: transparent;
+  color: #000;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #E5E5E5;
+  /* Necessary so the scrollbar can be absolutely positioned within the wrapper on Lion. */
+  position: relative;
+  /* This prevents unwanted scrollbars from showing up on the body and wrapper in IE. */
+  overflow: hidden; }
+  /* line 803, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials .CodeMirror .copy {
+    display: none;
+    padding: 10px 10px 3px 10px; }
+  /* line 808, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials .CodeMirror:hover .copy {
+    display: block; }
+  /* line 810, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.tutorials .CodeMirror .select, body.developers.tutorials .CodeMirror .copy {
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid #E5E5E5;
+    border-left: 1px solid #E5E5E5;
+    background-color: #F3F8FB;
+    -webkit-border-radius: 4px 0 4px 0;
+    -moz-border-radius: 4px 0 4px 0;
+    -ms-border-radius: 4px 0 4px 0;
+    -o-border-radius: 4px 0 4px 0;
+    border-radius: 4px 0 4px 0; }
+    /* line 820, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.tutorials .CodeMirror .select a, body.developers.tutorials .CodeMirror .copy a {
+      font-size: 14px; }
+    /* line 821, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.tutorials .CodeMirror .select a:hover, body.developers.tutorials .CodeMirror .copy a:hover {
+      color: #27527; }
+/* line 825, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .CodeMirror-lines {
+  padding: .5em;
+  white-space: pre;
+  cursor: text;
+  margin-left: 7px; }
+/* line 832, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-keyword {
+  color: #708; }
+/* line 833, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-atom {
+  color: #219; }
+/* line 834, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-number {
+  color: #164; }
+/* line 835, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-def {
+  color: #00f; }
+/* line 836, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-variable {
+  color: #666666; }
+/* line 837, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-variable-2 {
+  color: #05a; }
+/* line 838, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-variable-3 {
+  color: #085; }
+/* line 839, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-property {
+  color: #666666; }
+/* line 840, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-operator {
+  color: #666666; }
+/* line 841, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-comment {
+  color: #a50; }
+/* line 842, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-string {
+  color: #a11; }
+/* line 843, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-string-2 {
+  color: #f50; }
+/* line 844, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-meta {
+  color: #555; }
+/* line 845, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-error {
+  color: #f00; }
+/* line 846, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-qualifier {
+  color: #555; }
+/* line 847, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-builtin {
+  color: #30a; }
+/* line 848, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-bracket {
+  color: #997; }
+/* line 849, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-tag {
+  color: #170; }
+/* line 850, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-attribute {
+  color: #00c; }
+/* line 851, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-header {
+  color: blue; }
+/* line 852, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-quote {
+  color: #090; }
+/* line 853, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-hr {
+  color: #999; }
+/* line 854, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.tutorials .cm-s-default span.cm-link {
+  color: #00c; }
+
+/* Example show */
+/* line 860, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.examples div.background.floating {
+  overflow: visible; }
+/* line 864, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+body.developers.examples section {
+  /* Examples list */ }
+  /* line 865, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.examples section hgroup {
+    display: block; }
+  /* line 866, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.examples section h2 {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    vertical-align: middle;
+    margin: 0 10px 0 0; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    body.developers.examples section h2 {
+      *display: inline; }
+  /* line 867, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.examples section em {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    vertical-align: middle;
+    height: 19px;
+    padding: 4px 6px;
+    margin: 3px 5px 0 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    border-radius: 2px;
+    font: bold 13px "Segoe UI Bold","Helvetica Bold", Arial;
+    line-height: 17px;
+    color: white; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    body.developers.examples section em {
+      *display: inline; }
+    /* line 878, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.examples section em.basic {
+      text-transform: uppercase;
+      background: #93BD41; }
+    /* line 879, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.examples section em.medium {
+      text-transform: uppercase;
+      background: #FFCC66; }
+    /* line 880, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.examples section em.hard {
+      text-transform: uppercase;
+      background: #E95850; }
+  /* line 884, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.examples section div.content.no_padding.code input, body.developers.examples section div.content.no_padding.code p, body.developers.examples section div.content.no_padding.code div.buttons {
+    margin: 0 40px 20px;
+    width: 878px; }
+  /* line 887, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.examples section div.content.no_padding.code div.buttons {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    width: auto;
+    letter-spacing: -4px;
+    font-size: 0;
+    background: #CCCCCC;
+    padding: 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    body.developers.examples section div.content.no_padding.code div.buttons {
+      *display: inline; }
+    /* line 896, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.examples section div.content.no_padding.code div.buttons button {
+      display: -moz-inline-box;
+      -moz-box-orient: vertical;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      letter-spacing: 0;
+      height: 40px;
+      width: 65px;
+      padding: 11px 0 14px 0;
+      text-align: center;
+      border: none;
+      border-left: 1px solid white;
+      border-right: 1px solid #CCCCCC;
+      font: bold 15px "Helvetica",Arial;
+      color: #FF6600;
+      background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #e0e0e0));
+      background: -webkit-linear-gradient(#ffffff, #e0e0e0);
+      background: -moz-linear-gradient(#ffffff, #e0e0e0);
+      background: -o-linear-gradient(#ffffff, #e0e0e0);
+      background: -ms-linear-gradient(#ffffff, #e0e0e0);
+      background: linear-gradient(#ffffff, #e0e0e0); }
+      /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+      body.developers.examples section div.content.no_padding.code div.buttons button {
+        *display: inline; }
+      /* line 910, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.examples section div.content.no_padding.code div.buttons button.first {
+        border-right: 1px solid #CCCCCC;
+        -moz-border-radius-topleft: 5px;
+        -webkit-border-top-left-radius: 5px;
+        -ms-border-top-left-radius: 5px;
+        -o-border-top-left-radius: 5px;
+        border-top-left-radius: 5px;
+        -moz-border-radius-bottomleft: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        -ms-border-bottom-left-radius: 5px;
+        -o-border-bottom-left-radius: 5px;
+        border-bottom-left-radius: 5px; }
+      /* line 914, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.examples section div.content.no_padding.code div.buttons button.last {
+        width: 66px;
+        border-right: none;
+        -moz-border-radius-topright: 5px;
+        -webkit-border-top-right-radius: 5px;
+        -ms-border-top-right-radius: 5px;
+        -o-border-top-right-radius: 5px;
+        border-top-right-radius: 5px;
+        -moz-border-radius-bottomright: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+        -ms-border-bottom-right-radius: 5px;
+        -o-border-bottom-right-radius: 5px;
+        border-bottom-right-radius: 5px; }
+      /* line 921, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.examples section div.content.no_padding.code div.buttons button:hover, body.developers.examples section div.content.no_padding.code div.buttons button.selected, body.developers.examples section div.content.no_padding.code div.buttons button:focus {
+        color: #666;
+        cursor: pointer;
+        outline: none;
+        background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e0e0e0), color-stop(100%, #ffffff));
+        background: -webkit-linear-gradient(#e0e0e0, #ffffff);
+        background: -moz-linear-gradient(#e0e0e0, #ffffff);
+        background: -o-linear-gradient(#e0e0e0, #ffffff);
+        background: -ms-linear-gradient(#e0e0e0, #ffffff);
+        background: linear-gradient(#e0e0e0, #ffffff);
+        background: #FFFFFF \9; }
+      /* line 925, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.examples section div.content.no_padding.code div.buttons button.selected {
+        cursor: default; }
+  /* line 930, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.examples section div.content.no_padding.code span.crosshair {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    margin: 0 0 30px 40px;
+    padding: 3px 0 3px 32px;
+    font: normal 15px Arial;
+    color: #777777;
+    line-height: 20px;
+    background: url('/images/central_icons/raster.png') no-repeat 0 -30px; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    body.developers.examples section div.content.no_padding.code span.crosshair {
+      *display: inline; }
+  /* line 933, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.examples section div.content.no_padding.code span.rain {
+    display: -moz-inline-box;
+    -moz-box-orient: vertical;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    margin: 0 0 30px 40px;
+    padding: 3px 0 3px 32px;
+    font: normal 15px Arial;
+    color: #48A5A6;
+    line-height: 20px;
+    background: url('/images/central_icons/raster.png') no-repeat 0 0; }
+    /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+    body.developers.examples section div.content.no_padding.code span.rain {
+      *display: inline; }
+  /* line 938, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.examples section div.content.no_padding.code div#map {
+    border-top: 1px solid #E5E5E5;
+    width: 100%;
+    height: 400px; }
+  /* line 947, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.examples section ul.examples_list {
+    display: block;
+    letter-spacing: -4px;
+    font-size: 0; }
+    /* line 952, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.examples section ul.examples_list li {
+      position: relative;
+      display: -moz-inline-box;
+      -moz-box-orient: vertical;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      width: 239px;
+      height: 170px;
+      overflow: hidden;
+      padding: 40px;
+      border-right: 1px solid #E5E5E5;
+      border-top: 1px solid #E5E5E5;
+      letter-spacing: 0;
+      background: url('/images/layout/examples.png') no-repeat 2px 40px; }
+      /* line 7, ../../../../../../../.gem/ruby/1.9.3/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+      body.developers.examples section ul.examples_list li {
+        *display: inline; }
+      /* line 964, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.examples section ul.examples_list li h3 a {
+        color: #333333;
+        text-decoration: none; }
+        /* line 964, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+        body.developers.examples section ul.examples_list li h3 a:hover {
+          color: black; }
+      /* line 965, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.examples section ul.examples_list li p {
+        display: block;
+        width: auto!important;
+        padding: 0!important;
+        margin: 20px 0 0 0!important; }
+      /* line 967, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.examples section ul.examples_list li:last-child {
+        width: 239px!important; }
+      /* line 968, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.examples section ul.examples_list li:nth-child(2n) {
+        background: url('/images/layout/examples.png') no-repeat 2px 70px; }
+      /* line 969, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.examples section ul.examples_list li:nth-child(3n) {
+        border-right: none;
+        background: url('/images/layout/examples.png') no-repeat 17px -260px; }
+      /* line 970, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.examples section ul.examples_list li:nth-child(4n) {
+        background: url('/images/layout/examples.png') no-repeat -318px 40px; }
+      /* line 971, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.examples section ul.examples_list li:nth-child(5n) {
+        background: url('/images/layout/examples.png') no-repeat -10px 40px; }
+      /* line 972, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.examples section ul.examples_list li:nth-child(6n) {
+        background: url('/images/layout/examples.png') no-repeat -318px 40px; }
+      /* line 973, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.examples section ul.examples_list li:hover {
+        cursor: pointer; }
+        /* line 975, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+        body.developers.examples section ul.examples_list li:hover h3 a {
+          color: black; }
+    /* line 978, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.examples section ul.examples_list em {
+      position: absolute;
+      bottom: 40px;
+      left: 40px; }
+    /* line 979, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.examples section ul.examples_list strong.highlight {
+      background: yellow; }
+  /* line 982, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  body.developers.examples section ul.related {
+    margin: 15px 0 0 0;
+    list-style-image: url('/images/central_icons/list.jpg'); }
+    /* line 985, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    body.developers.examples section ul.related li {
+      display: list-item;
+      margin: 0;
+      padding: 6px 0;
+      border: none; }
+      /* line 985, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+      body.developers.examples section ul.related li a {
+        font: normal 15px "Helvetica Neue",Arial;
+        text-decoration: none; }
+
+/* line 990, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+pre, pre code {
+  font-size: 13px; }
+
+/* line 992, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+pre, code {
+  font-family: Consolas, Menlo, Courier, monospace;
+  color: #333;
+  background: #fff; }
+
+/* line 998, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+pre {
+  line-height: 19px;
+  overflow: auto; }
+
+/* line 1003, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+pre code {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+/*  -------------------------------------------------------
+ *    Pretty syntax highlighting
+ *
+ *    Acronym Key
+ *    =====================================================
+ *   .str = string content
+ *   .kwd = keyword
+ *   .com = comment
+ *   .typ = type name
+ *   .lit = literal value
+ *   .pun = punctuation
+ *   .opn = lisp open bracket
+ *   .clo = listp close bracket
+ *   .tag = markup tag name
+ *   .atn = markup attribute name
+ *   .atv = markup attribute value
+ *   .dec = declaration
+ *   .var = variable name
+ *   .fun = function name
+ *
+ *  ------------------------------------------------------- */
+/* greys */
+/* line 1032, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+.pln {
+  color: #404040; }
+
+/* line 1035, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+.com {
+  color: #808080; }
+
+/* line 1041, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+.pun,
+.opn,
+.tag,
+.atn,
+.clo {
+  color: #909090; }
+
+/*rust*/
+/* line 1045, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+.kwd,
+.fun {
+  color: #e0501c;
+  font-weight: bold; }
+
+/*green*/
+/* line 1049, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+.str,
+.atv {
+  color: #62bcf1; }
+
+/*dark blue*/
+/* line 1052, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+.linenums {
+  color: #0B5A91; }
+
+/*light blue*/
+/* line 1055, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+.lit {
+  color: #3ca891; }
+
+/* line 1059, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+.typ,
+.dec,
+.var {
+  color: #0C9DC2; }
+
+/* Specify class=linenums on a pre to get line numbering */
+/* line 1063, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+ol.linenums {
+  margin: 0 0 0 40px;
+  list-style: decimal; }
+
+/* line 1067, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+ol.linenums li {
+  padding: 0;
+  color: #bebec5;
+  line-height: 18px; }
+
+/* line 1078, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+section.auto-slideshow .content {
+  height: 260px;
+  padding: 0; }
+/* line 1083, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+section.auto-slideshow ul {
+  position: relative; }
+  /* line 1087, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+  section.auto-slideshow ul li {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 880px;
+    height: 180px;
+    overflow: hidden;
+    padding: 40px;
+    margin: 0; }
+    /* line 1089, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    section.auto-slideshow ul li.ny {
+      background: url('/images/backgrounds/ny.png') repeat-x 0 0; }
+    /* line 1090, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    section.auto-slideshow ul li.carbon {
+      background: url('/images/backgrounds/carbon.jpg') repeat-x 0 0; }
+    /* line 1091, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    section.auto-slideshow ul li.wsj {
+      background: url('/images/backgrounds/wsj.png') repeat-x 0px 0; }
+    /* line 1092, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    section.auto-slideshow ul li.ny1940 {
+      background: url('/images/backgrounds/ny1940.png') repeat-x 0 0; }
+    /* line 1093, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    section.auto-slideshow ul li.mapmydata {
+      background: url('/images/backgrounds/mapmydata.png') repeat-x 0 0; }
+    /* line 1094, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    section.auto-slideshow ul li.stones {
+      background: url('/images/backgrounds/stones.png') repeat-x 0 0; }
+    /* line 1095, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    section.auto-slideshow ul li.agroguia {
+      background: url('/images/backgrounds/agroguia_bkg.jpg') repeat-x 0 0; }
+    /* line 1096, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    section.auto-slideshow ul li.meteorites {
+      background: url('/images/backgrounds/meteorites_bkg.jpg') repeat-x 0 0; }
+    /* line 1097, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    section.auto-slideshow ul li.volcano {
+      background: url('/images/backgrounds/volcano_bkg.jpg') repeat-x 0 0; }
+    /* line 1108, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    section.auto-slideshow ul li img {
+      opacity: 0;
+      right: -20px;
+      bottom: 0px;
+      position: absolute; }
+    /* line 1110, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    section.auto-slideshow ul li h3 {
+      margin: 0 0 25px 0; }
+    /* line 1111, ../../../../app/assets/stylesheets/developers/layout.css.scss */
+    section.auto-slideshow ul li p {
+      width: 550px; }
+/* line 4, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror {
+  line-height: 1.2em;
+  font-family: Consolas, Menlo, Courier, monospace;
+  border-top: 1px solid #484848;
+  margin: 0 -29px 0 -40px;
+  background: #333;
+  color: #0f0;
+  /* Necessary so the scrollbar can be absolutely positioned within the wrapper on Lion. */
+  position: relative;
+  /* This prevents unwanted scrollbars from showing up on the body and wrapper in IE. */ }
+  /* line 16, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .CodeMirror .copy {
+    padding: 10px 10px 3px 10px; }
+  /* line 20, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .CodeMirror .select, .CodeMirror .copy {
+    position: absolute;
+    right: 0;
+    top: -45px;
+    color: #666; }
+    /* line 26, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+    .CodeMirror .select a, .CodeMirror .copy a {
+      font-size: 14px; }
+    /* line 27, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+    .CodeMirror .select a:hover, .CodeMirror .copy a:hover {
+      color: #777; }
+  /* line 30, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .CodeMirror .select {
+    padding: 7px 8px 7px 8px; }
+
+/* line 35, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror-scroll {
+  overflow: auto;
+  /* This is needed to prevent an IE[67] bug where the scrolled content
+     is visible outside of the scrolling box. */
+  position: relative;
+  outline: none; }
+
+/* Vertical scrollbar */
+/* line 44, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 5; }
+
+/* line 51, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror-scrollbar-inner {
+  /* This needs to have a nonzero width in order for the scrollbar to appear
+     in Firefox and IE9. */
+  width: 1px; }
+
+/* line 56, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror-scrollbar.cm-sb-overlap {
+  /* Ensure that the scrollbar appears in Lion, and that it overlaps the content
+     rather than sitting to the right of it. */
+  position: absolute;
+  z-index: 1;
+  float: none;
+  right: 0;
+  min-width: 12px; }
+
+/* line 65, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror-scrollbar.cm-sb-nonoverlap {
+  min-width: 12px; }
+
+/* line 68, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror-scrollbar.cm-sb-ie7 {
+  min-width: 18px; }
+
+/* line 72, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror-gutter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-color: #F3F8FB;
+  border-right: 1px solid #E5E5E5;
+  width: 36px;
+  height: 100%; }
+
+/* line 80, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror .CodeMirror-gutter-text {
+  color: #666666;
+  font-size: 12px;
+  text-align: center;
+  padding: .5em;
+  opacity: .5;
+  white-space: pre !important;
+  cursor: default; }
+
+/* line 90, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror-lines {
+  padding: 30px 35px;
+  white-space: pre;
+  cursor: text;
+  margin-left: 7px; }
+
+/* line 97, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror pre {
+  font-family: Consolas, Menlo, Courier, monospace;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  border-width: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  white-space: pre;
+  word-wrap: normal;
+  line-height: inherit;
+  color: inherit;
+  overflow: visible; }
+
+/* line 114, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror-wrap pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: normal; }
+
+/* line 119, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror-wrap .CodeMirror-scroll {
+  overflow-x: hidden; }
+
+/* line 123, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror textarea {
+  outline: none !important; }
+
+/* line 127, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror pre.CodeMirror-cursor {
+  z-index: 10;
+  position: absolute;
+  visibility: hidden;
+  border-left: 1px solid black;
+  border-right: none;
+  width: 0; }
+
+/* line 135, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-keymap-fat-cursor pre.CodeMirror-cursor {
+  width: auto;
+  border: 0;
+  background: transparent;
+  background: rgba(0, 200, 0, 0.4);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#6600c800, endColorstr=#4c00c800); }
+
+/* Kludge to turn off filter in ie9+, which also accepts rgba */
+/* line 143, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-keymap-fat-cursor pre.CodeMirror-cursor:not(#nonsense_id) {
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+
+/* line 147, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror-focused pre.CodeMirror-cursor {
+  visibility: visible; }
+
+/* line 151, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+div.CodeMirror-selected {
+  background: rgba(0, 0, 0, 0.2); }
+
+/* line 152, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror-focused div.CodeMirror-selected {
+  background: rgba(0, 0, 0, 0.2); }
+
+/* line 154, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.CodeMirror-searching {
+  background: #ffa;
+  background: rgba(255, 255, 0, 0.4); }
+
+/* Default theme */
+/* line 162, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-keyword {
+  color: #0f0; }
+
+/* line 163, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-atom {
+  color: #0f0; }
+
+/* line 164, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-number {
+  color: #0f0; }
+
+/* line 165, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-def {
+  color: #0f0; }
+
+/* line 166, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-variable {
+  color: #0f0; }
+
+/* line 167, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-variable-2 {
+  color: #0f0; }
+
+/* line 168, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-variable-3 {
+  color: #0f0; }
+
+/* line 169, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-property {
+  color: #0f0; }
+
+/* line 170, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-operator {
+  color: #0f0; }
+
+/* line 171, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-comment {
+  color: #ECECEC; }
+
+/* line 172, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-string {
+  color: #FF5E51; }
+
+/* line 173, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-string-2 {
+  color: #0f0; }
+
+/* line 174, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-meta {
+  color: #0f0; }
+
+/* line 175, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-error {
+  color: #0f0; }
+
+/* line 176, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-qualifier {
+  color: #0f0; }
+
+/* line 177, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-builtin {
+  color: #0f0; }
+
+/* line 178, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-bracket {
+  color: #0f0; }
+
+/* line 179, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-tag {
+  color: #0f0; }
+
+/* line 180, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-attribute {
+  color: #0f0; }
+
+/* line 181, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-header {
+  color: #0f0; }
+
+/* line 182, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-quote {
+  color: #0f0; }
+
+/* line 183, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-hr {
+  color: #0f0; }
+
+/* line 184, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.cm-s-default span.cm-link {
+  color: #0f0; }
+
+/* line 187, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+.result_wrapper .CodeMirror {
+  color: #444;
+  background: #eee;
+  border-top-color: #ccc; }
+  /* line 192, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-keyword {
+    color: #444; }
+  /* line 193, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-atom {
+    color: #444; }
+  /* line 194, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-number {
+    color: #444; }
+  /* line 195, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-def {
+    color: #444; }
+  /* line 196, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-variable {
+    color: #444; }
+  /* line 197, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-variable-2 {
+    color: #444; }
+  /* line 198, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-variable-3 {
+    color: #444; }
+  /* line 199, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-property {
+    color: #444; }
+  /* line 200, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-operator {
+    color: #444; }
+  /* line 201, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-comment {
+    color: #444; }
+  /* line 202, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-string {
+    color: #444; }
+  /* line 203, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-string-2 {
+    color: #444; }
+  /* line 204, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-meta {
+    color: #444; }
+  /* line 205, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-error {
+    color: #444; }
+  /* line 206, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-qualifier {
+    color: #444; }
+  /* line 207, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-builtin {
+    color: #444; }
+  /* line 208, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-bracket {
+    color: #444; }
+  /* line 209, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-tag {
+    color: #444; }
+  /* line 210, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-attribute {
+    color: #444; }
+  /* line 211, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-header {
+    color: #444; }
+  /* line 212, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-quote {
+    color: #444; }
+  /* line 213, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-hr {
+    color: #444; }
+  /* line 214, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .result_wrapper .CodeMirror .cm-s-default span.cm-link {
+    color: #444; }
+
+/* line 218, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+span.cm-header, span.cm-strong {
+  font-weight: bold; }
+
+/* line 219, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+span.cm-em {
+  font-style: italic; }
+
+/* line 220, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+span.cm-emstrong {
+  font-style: italic;
+  font-weight: bold; }
+
+/* line 221, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+span.cm-link {
+  text-decoration: underline; }
+
+/* line 223, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+span.cm-invalidchar {
+  color: #f00; }
+
+/* line 225, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+div.CodeMirror span.CodeMirror-matchingbracket {
+  color: #0f0; }
+
+/* line 226, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
+  color: #f22; }
+
+@media print {
+  /* Hide the cursor when printing */
+  /* line 230, ../../../../app/assets/stylesheets/developers/codemirror.css.scss */
+  .CodeMirror pre.CodeMirror-cursor {
+    visibility: hidden; } }
+/*
+
+
+*/
+
