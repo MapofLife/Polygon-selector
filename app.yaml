@@ -12,6 +12,9 @@ builtins:
 
 handlers:
 
+- url: /save/.*
+  script: insert_stuff.application
+
 - url: /stylesheets
   static_dir: stylesheets
 
@@ -20,9 +23,6 @@ handlers:
 
 - url: /.*
   static_dir: html
-
-- url: /save/.*
-  script: insert_stuff.application
 
 - url: /
   static_files: html/index.html

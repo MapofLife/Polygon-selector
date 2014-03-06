@@ -6,16 +6,14 @@ html, body, #map {
     margin: 0;
 }
 
-button:hover {
-    text-decoration: none;
-    position: relative;
-    left: 2px;
-}
 button {
+    position: absolute;
     display: block;
+    top: 39px;
+    left: 20px;
     margin: 20px 20px 0 0;
-    width: 100px;
-    height: 29px;
+    width: 48px;
+    height: 25px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 4px 2px;
     -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 4px 2px;
     box-shadow: rgba(0, 0, 0, 0.2) 0 0 4px 2px;
@@ -28,12 +26,13 @@ button {
     border-radius: 4px;
     border: 1px solid #999999;
     z-index: 5;
-    font: normal 14px Arial;
+    font: normal 12px Arial;
     color: #999999;
+    display: block;
 }
 button:active {
     text-decoration: none;
-    background-color: #9c9b9b;
+    background-color: #f5f5f5;
 }
 button.selected {
     text-decoration: none;
@@ -97,6 +96,25 @@ button.selected {
     top: 45px;
     right: 13px;
     width: 87px;
+}
+
+.hover-window {
+    position:absolute;
+    font-family: Helvetica,sans-serif;
+    font-size:12px;
+    text-align: center;
+    padding:5px;
+    background-color:rgb(255,255,255);
+    background-color:rgba(255,255,255,.85);
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    behavior: url(border-radius.htc);
+    z-index:99999;
+    display: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 div.searchbox {
