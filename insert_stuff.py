@@ -4,8 +4,6 @@
 __author__ = 'Aaron Steele'
 
 # MOL imports
-import cache
-import molcounter
 
 # Standard Python imports
 import json
@@ -26,8 +24,8 @@ class PutHandler(webapp2.RequestHandler):
         sql = "insert into save_geom_test \
         select new_new_name as geom_name, the_geom \
         from wdpa2010 \
-        where cartodb_id = 3"
-        
+        where cartodb_id = " + cartodb_id
+        logging.info(sql)
         url = 'http://mol.cartodb.com/api/v2/sql?%s' % (urllib.urlencode(dict(q=sql, api_key=api_key)))
         logging.info(url)
         value = urlfetch.fetch(url, deadline=60).content
