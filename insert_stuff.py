@@ -1,7 +1,7 @@
 
 """This module contains a handler that pushes geometries to a save table."""
 
-__author__ = 'Aaron Steele'
+__author__ = 'Mil'
 
 # MOL imports
 

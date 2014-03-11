@@ -40,6 +40,61 @@ button.selected {
     color: #111111;
     border-color: #DD1122;
 }
+
+.toggle-left {
+    position: absolute;
+    display: block;
+    top: 39px;
+    left: 100px;
+    margin: 20px 20px 10 10;
+    width: 48px;
+    height: 25px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0px 0px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0px 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 0px 0px;
+    z-index: 5;
+    background: white;
+    -webkit-border-top-right-radius: 0px;
+    -moz-border-top-right-radius: 0px;
+    -ms-border-top-right-radius: 0px;
+    -o-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -moz-border-bottom-right-radius: 0px;
+    -ms-border-bottom-right-radius: 0px;
+    -o-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: 1px solid #999999;
+    z-index: 5;
+    font: normal 12px Arial;
+    color: #999999;
+    display: block;
+}
+.toggle-middle {
+    position: absolute;
+    display: block;
+    top: 39px;
+    left: 148px;
+    margin: 20px 20px 10 10;
+    width: 48px;
+    height: 25px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0px 0px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 0px 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 0px 0px;
+    z-index: 5;
+    background: white;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+    border: 1px solid #999999;
+    z-index: 5;
+    font: normal 12px Arial;
+    color: #999999;
+    display: block;
+}
+
 .ui-autocomplete {
     max-height: 500px;
     max-width: 600px;
