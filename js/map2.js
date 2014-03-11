@@ -1,5 +1,5 @@
 var overlay, image, lay, selectedShape, h_id, 
-  hpoly = new Array(),
+  hpoly = new Array(),  
   hquery = "",
   selected = new Array(), //array of cartodb_id's of selected polygons
   polys   = new Array(),
@@ -19,11 +19,9 @@ var overlay, image, lay, selectedShape, h_id,
 
 
   function drawPolygon(id, poly) {
-    // Construct the polygon
-    // Note that we don't specify an array or arrays, but instead just
-    // a simple array of LatLngs in the paths property
+    // Draw polygon on map when selected
 
-    s = selected.indexOf(id);
+    var s = selected.indexOf(id);
     if(s != -1) { // if already selected, remove from map
       for(shape in polys) {
         if (polys[shape].cartodb_id == id) {
@@ -34,7 +32,7 @@ var overlay, image, lay, selectedShape, h_id,
       selected.splice(s,1);
     }
     else {  // otherwise, add to selected list, and draw on map
-    selected.push(id);
+      selected.push(id);
 
       var options = { paths: poly,
         strokeColor: '#AA2143',
@@ -45,32 +43,58 @@ var overlay, image, lay, selectedShape, h_id,
       newPoly = new google.maps.Polygon(options);
       newPoly.cartodb_id = id;
       newPoly.setMap(map);
-      google.maps.event.addListener(newPoly, 'click', function() {
+
+      google.maps.event.addListener(newPoly, 'click', function() {  //CHECK what is this?
         setSelection(this);
       });
+
       polys.push(newPoly);
     }
   }
 
+  function drawHoverPolygon(id, poly) {
+    // Draw polygon on map (when mouse hovers over it)
+
+    var options = { paths: poly,
+      strokeColor: '#F0C3B1',
+      strokeOpacity: 1,
+      strokeWeight: 1,
+      fillColor: "#ED8961",
+      fillOpacity: 0.7 };
+    newPoly = new google.maps.Polygon(options);
+    newPoly.cartodb_id = id;
+    newPoly.setMap(map);
+    hpoly.push(newPoly);
+  }
+
+  function removeHoverPolygon() {
+    // Removes polygon from map
+    if (hpoly != null) {
+      hpoly[0].setMap(null);
+      hpoly.splice(0,1);
+    }
+  }
+
   function getPolygonsSearch(val) {
+    // Gets polygon coordinates from search function, sends to drawPolygoon
 
     query   = "SELECT cartodb_id, ST_AsGeoJSON(the_geom) as geoj FROM " + table + 
-    " WHERE name = '" + val + "'"; //only works for second part or first part alone
-
+      " WHERE name = '" + val + "'"; 
     var url = "http://" + user + ".cartodb.com/api/v1/sql?q=" + query;
-    var xmin, ymin, xmax, ymax;
 
     $.getJSON(url,function(response) {
+      var xmin, ymin, xmax, ymax, coords, poly;
+      xmin = -180, xmax = 180, ymin = -80, ymax = 80;
 
-      var xmin = -180, xmax = 180, ymin = -80, ymax = 80;
       for (i in response.rows) {
-        var 
-        coords = JSON.parse(response.rows[i].geoj).coordinates[0][0],
+        coords = JSON.parse(response.rows[i].geoj).coordinates[0][0];
         xmin = coords[0][0], xmax = coords[0][0], ymin = coords[0][1], ymax = coords[0][1];
         poly   = new Array(); 
+
         for (j in coords) { 
           // get polygon coordinates
-          poly.push(new google.maps.LatLng(coords[j][1], coords[j][0]))
+          poly.push(new google.maps.LatLng(coords[j][1], coords[j][0]));
+
           // find bounds
           if(xmin > coords[j][0])
             xmin = coords[j][0];
@@ -82,31 +106,29 @@ var overlay, image, lay, selectedShape, h_id,
             ymax = coords[j][1];
         }
         poly.pop();
-        drawPolygon( response.rows[i].cartodb_id, poly);
+        drawPolygon(response.rows[i].cartodb_id, poly);
       };
       map.fitBounds(
-          new google.maps.LatLngBounds(
-              new google.maps.LatLng(ymin, xmin),
-              new google.maps.LatLng(ymax, xmax)
-          )
+        new google.maps.LatLngBounds(
+            new google.maps.LatLng(ymin, xmin),
+            new google.maps.LatLng(ymax, xmax)
+        )
       );
-
     })
-
-    
   }
 
   function getPolygonsClick(val) {
+    // Get polygon coordinates from cartodb_id (returned on click), sends to drawPolygon
 
     query   = "SELECT cartodb_id, ST_AsGeoJSON(the_geom) as geoj FROM " + table + 
     " WHERE cartodb_id = " + val;
-    
     var url = "http://" + user + ".cartodb.com/api/v1/sql?q=" + query;
+
     $.getJSON(url,function(response) {
+      var coords, poly;
 
       for (i in response.rows) {
-        var 
-        coords = JSON.parse(response.rows[i].geoj).coordinates[0][0],
+        coords = JSON.parse(response.rows[i].geoj).coordinates[0][0];
         poly   = new Array();
 
         for (j in coords) {
@@ -116,16 +138,16 @@ var overlay, image, lay, selectedShape, h_id,
         poly.pop();
         drawPolygon( response.rows[i].cartodb_id, poly);
       };
-
     })    
   }
 
   function getPolygonHover(val) {
+    // Get polygon coordinates from cartodb_id (on hover), sends to drawHoverPolygon
 
     query   = "SELECT cartodb_id, ST_AsGeoJSON(the_geom) as geoj FROM " + table + 
     " WHERE cartodb_id = " + val;
-    
     var url = "http://" + user + ".cartodb.com/api/v1/sql?q=" + query;
+
     $.getJSON(url,function(response) {
 
       for (i in response.rows) {
@@ -141,25 +163,8 @@ var overlay, image, lay, selectedShape, h_id,
       };
     })    
   }
- function drawHoverPolygon(id, poly) {
-      var options = { paths: poly,
-        strokeColor: '#F0C3B1',
-        strokeOpacity: 1,
-        strokeWeight: 1,
-        fillColor: "#ED8961",
-        fillOpacity: 0.7 };
-      newPoly = new google.maps.Polygon(options);
-      newPoly.cartodb_id = id;
-      newPoly.setMap(map);
-      hpoly.push(newPoly);
- }
 
- function removeHoverPolygon() {
-  if (hpoly != "") {
-    hpoly[0].setMap(null);
-    hpoly.splice(0,1);
-  }
- }
+//CHECK NOT IN USE
   function clearSelection() {
     if (!selectedShape) return;
 
@@ -173,16 +178,17 @@ var overlay, image, lay, selectedShape, h_id,
     selectedShape = shape;
     shape.setEditable(false);
   }
+/////
 
-var storePolygon = function(cartodb_id) {
-    var 
-      q = "cartodb_id=" + cartodb_id;
+  var storePolygon = function(cartodb_id) {
+    // inserts row with cartodb_id into a table
+    var q = "cartodb_id=" + cartodb_id;
     $.ajax({
       url: "/save/put",
       //crossDomain: true,
       type: 'POST',
       dataType: 'text',
-      data: '',
+      data: q,
       success: function() { },
       error: function() { }
     });
@@ -295,6 +301,7 @@ var storePolygon = function(cartodb_id) {
       calcHoverPosition(e)
     });
 
+    // CHECK this seems to do nothing
     // When the mouse exits the window, hide polygons and the hover window
     // $map_canvas.mouseleave(function(e){
     //   $hover_window.hide();
@@ -314,6 +321,7 @@ var storePolygon = function(cartodb_id) {
               getPolygonsClick(data.cartodb_id);
             });
             layer.on('featureOver', function(e, pos, latlng, data) {
+              console.log('hover'+data.cartodb_id)
               if (data.cartodb_id != h_id) {
                 h_id = data.cartodb_id;
                 getPolygonHover(h_id);
@@ -322,8 +330,9 @@ var storePolygon = function(cartodb_id) {
               } 
             });
             layer.on('featureOut', function(e, pos, latlng, data) {
-              $hover_window.hide();
-              removeHoverPolygon();
+              console.log('out'+data.cartodb_id);
+              $hover_window.hide(); 
+              removeHoverPolygon();  // CHECK still laggy
               h_id="";
             })
 
@@ -335,38 +344,38 @@ var storePolygon = function(cartodb_id) {
           .on('error', function() {
             cartodb.log.log("some error occurred");
           });
-//     cartodb.createLayer(map, url2) 
-//           .addTo(map,0)
-//           .on('done', function(layer) {
-//             layers[1] = layer;
-//             layer.setInteractivity("cartodb_id,name_0");
-//             layer.setInteraction(true);
-//             layer.on('featureClick', function(e, pos, latlng, data) {
-//               console.log('this is your data' + data.cartodb_id);
-//               getPolygonsClick(data.cartodb_id);
-//             });
-//             layer.on('featureOver', function(e, pos, latlng, data) {
-//               if (data.cartodb_id != h_id) {
-//                 h_id = data.cartodb_id;
-//                 getPolygonHover(h_id);
-//                 $hover_window.html(data.name_0);
-//                 $hover_window.show();
-//               } 
-//             });
-//             layer.on('featureOut', function(e, pos, latlng, data) {
-//               $hover_window.hide();
-//               removeHoverPolygon();
-//               h_id="";
-//             })
+    cartodb.createLayer(map, url2) 
+          .addTo(map,1)
+          .on('done', function(layer) {
+            layers[1] = layer;
+            layer.setInteractivity("cartodb_id,name_0");
+            layer.setInteraction(true);
+            layer.on('featureClick', function(e, pos, latlng, data) {
+              console.log('this is your data' + data.cartodb_id);
+              getPolygonsClick(data.cartodb_id);
+            });
+            layer.on('featureOver', function(e, pos, latlng, data) {
+              if (data.cartodb_id != h_id) {
+                h_id = data.cartodb_id;
+                getPolygonHover(h_id);
+                $hover_window.html(data.name_0);
+                $hover_window.show();
+              } 
+            });
+            layer.on('featureOut', function(e, pos, latlng, data) {
+              $hover_window.hide();
+              removeHoverPolygon();
+              h_id="";
+            })
 
-//             layer.on('error', function(err) {
-//               cartodb.log.log('error: ' + err);
-//             }); 
-//           })
-//           .on('error', function() {
-//             cartodb.log.log("some error occurred");
-//           });
-// layer[0].hide();
+            layer.on('error', function(err) {
+              cartodb.log.log('error: ' + err);
+            }); 
+          })
+          .on('error', function() {
+            cartodb.log.log("some error occurred");
+          });
+//layer[0].hide();
 
     $('.searchbox .submit').click(function(event) {
        search($('.searchbox .text').val());
@@ -378,6 +387,7 @@ var storePolygon = function(cartodb_id) {
        $('.toggle-middle').css('background-color', 'white');
        layers[0].show();
        layers[1].hide();
+       table = 'wdpa2010';
        });
      });
     $(document).ready(function (){
@@ -386,6 +396,7 @@ var storePolygon = function(cartodb_id) {
        $('.toggle-left').css('background-color', 'white');
        layers[0].hide();
        layers[1].show();
+       table = 'gadm2'
        });
      });
 
