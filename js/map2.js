@@ -1,3 +1,7 @@
+//Draws polygons on map to implement select and hover. 
+//Hovering polygons is still a little buggy for GADM data.
+//Also might want to be more specific with the GADM hover box names
+
 var overlay, image, lay, selectedShape, h_id, 
   hpoly = new Array(),  
   hquery = "",
@@ -69,9 +73,10 @@ var overlay, image, lay, selectedShape, h_id,
 
   function removeHoverPolygon() {
     // Removes polygon from map
-    if (hpoly != null) {
-      hpoly[0].setMap(null);
-      hpoly.splice(0,1);
+    for (l = 0; l < hpoly.length; l++) {
+      console.log('out'+hpoly[l].cartodb_id);
+      hpoly[l].setMap(null);
+      hpoly.splice(l,1);
     }
   }
 
@@ -143,7 +148,7 @@ var overlay, image, lay, selectedShape, h_id,
 
   function getPolygonHover(val) {
     // Get polygon coordinates from cartodb_id (on hover), sends to drawHoverPolygon
-
+    removeHoverPolygon();
     query   = "SELECT cartodb_id, ST_AsGeoJSON(the_geom) as geoj FROM " + table + 
     " WHERE cartodb_id = " + val;
     var url = "http://" + user + ".cartodb.com/api/v1/sql?q=" + query;
@@ -321,8 +326,9 @@ var overlay, image, lay, selectedShape, h_id,
               getPolygonsClick(data.cartodb_id);
             });
             layer.on('featureOver', function(e, pos, latlng, data) {
-              console.log('hover'+data.cartodb_id)
               if (data.cartodb_id != h_id) {
+                //removeHoverPolygon();
+                console.log('hover'+data.cartodb_id);
                 h_id = data.cartodb_id;
                 getPolygonHover(h_id);
                 $hover_window.html(data.name);
@@ -330,9 +336,8 @@ var overlay, image, lay, selectedShape, h_id,
               } 
             });
             layer.on('featureOut', function(e, pos, latlng, data) {
-              console.log('out'+data.cartodb_id);
               $hover_window.hide(); 
-              removeHoverPolygon();  // CHECK still laggy
+              removeHoverPolygon();  //CHECK still laggy
               h_id="";
             })
 
@@ -356,6 +361,7 @@ var overlay, image, lay, selectedShape, h_id,
             });
             layer.on('featureOver', function(e, pos, latlng, data) {
               if (data.cartodb_id != h_id) {
+                console.log('hover:'+data.cartodb_id);
                 h_id = data.cartodb_id;
                 getPolygonHover(h_id);
                 $hover_window.html(data.name_0);
@@ -375,7 +381,7 @@ var overlay, image, lay, selectedShape, h_id,
           .on('error', function() {
             cartodb.log.log("some error occurred");
           });
-//layer[0].hide();
+layers[0].hide();
 
     $('.searchbox .submit').click(function(event) {
        search($('.searchbox .text').val());

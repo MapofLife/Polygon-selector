@@ -13,7 +13,7 @@ builtins:
 handlers:
 
 - url: /save/.*
-  script: create_table.application
+  script: insert_stuff.application
 
 - url: /stylesheets
   static_dir: stylesheets
