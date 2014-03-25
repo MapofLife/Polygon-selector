@@ -21,10 +21,14 @@ class PutHandler(webapp2.RequestHandler):
     """Request handler for cache requests."""
     def post(self):
         cartodb_id = self.request.get('cartodb_id')
-        sql = "insert into save_geom_test \
-        select new_new_name as geom_name, the_geom \
-        from wdpa2010 \
-        where cartodb_id = " + cartodb_id
+        shape_name = self.request.get('shape_name')
+        table_name = self.request.get('table_name')
+        new_table = self.request.get('new_table')
+        # pass in name, table, newtable name, and insert
+        sql = "insert into "+new_table+" (geom_name, the_geom_webmercator) \
+        values ('"+shape_name+"', (select the_geom_webmercator \
+        from "+table_name+" \
+        where cartodb_id = "+cartodb_id+"))"
         logging.info(sql)
         url = 'http://mol.cartodb.com/api/v2/sql?%s' % (urllib.urlencode(dict(q=sql, api_key=api_key)))
         logging.info(url)
@@ -33,8 +37,20 @@ class PutHandler(webapp2.RequestHandler):
         self.response.headers["Content-Type"] = "application/json"
         self.response.out.write(value)
 
+class CreateHandler(webapp2.RequestHandler):
+    """Request handler for cache requests."""
+    def post(self):
+        table_name = self.request.get('table_name')
+        sql = "create table "+table_name+" (geom_name varchar(255), the_geom_webmercator geometry)"
+        url = 'http://mol.cartodb.com/api/v2/sql?%s' % (urllib.urlencode(dict(q=sql, api_key=api_key)))
+        value = urlfetch.fetch(url, deadline=60).content
+        logging.info(sql)
+        self.response.headers["Cache-Control"] = "max-age=2629743" # Cache 1 month
+        self.response.headers["Content-Type"] = "application/json"
+        self.response.out.write(value) 
+
 application = webapp2.WSGIApplication(
-    [('/save/put', PutHandler),],
+    [('/save/create', CreateHandler), ('/save/put', PutHandler)],
     debug=True)
 def main():
     run_wsgi_app(application)
