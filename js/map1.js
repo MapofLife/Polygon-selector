@@ -318,27 +318,27 @@ var wdpa_selected = new Array();
     });
     $('#saveButton').click(function(event) {  //create new table and save selected polys
       var new_table = window.prompt("Please enter table name:", "table");
-      new_table = new_table+"_temp";
-      var q = "table_name="+new_table;
-      $.ajax({
-        url: "/save/create",
-        //crossDomain: true,
-        type: 'POST',
-        dataType: 'text',
-        data: q,
-        success: function() {
-          if (new_table != null) {
-          for (i in gadm_selected) {
-            storePolygon(gadm_selected[i][0], 'gadm2', gadm_selected[i][1], new_table);
-          }
-          for (j in wdpa_selected) {
-            storePolygon(wdpa_selected[j][0], 'wdpa2010', wdpa_selected[j][1], new_table);
-          }
-          alert("Saved!");
-          } 
-        },
-        error: function() { }
-      });      
+      var table_name = new_table+"_temp";
+      var q = "table_name="+table_name;
+      if (new_table != null) {
+        $.ajax({
+          url: "/save/create",
+          //crossDomain: true,
+          type: 'POST',
+          dataType: 'text',
+          data: q,
+          success: function() {
+            for (i in gadm_selected) {
+              storePolygon(gadm_selected[i][0], 'gadm2', gadm_selected[i][1], table_name);
+            }
+            for (j in wdpa_selected) {
+              storePolygon(wdpa_selected[j][0], 'wdpa2010', wdpa_selected[j][1], table_name);
+            }
+            alert("Saved with table name "+table_name);
+          },
+          error: function() { }
+        }); 
+      }       
     });
   };
   window.onload = main; 
